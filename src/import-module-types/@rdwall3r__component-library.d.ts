@@ -1,0 +1,1 @@
+declare module '@rdwall3r/component-library';
