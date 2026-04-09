@@ -1,6 +1,7 @@
 /* Page styling */
 html {
-  min-height: 100%;
+  height: 100%;
+  background-color: #303030;
 }
 body {
   font-family: sans-serif;
@@ -8,9 +9,10 @@ body {
   line-height: 1.45;
   background-color: #f8f8f8;
   color: #303030;
-  min-height: 100%;
+  height: 100%;
   width: 80%;
-  padding: 1rem;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 h1,
 h2 {
@@ -27,32 +29,8 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
-
-/* Main content styling */
-#main-nav ul {
-  list-style: none;
-}
-#main-nav li {
-  display: inline-block;
-  margin-right: 1em;
-}
-.logo {
-  float: left;
-  margin-right: 2em;
-}
-#main-nav::after {
-  content: "";
-  display: block;
-  clear: both;
-  margin-bottom: 1em;
-}
 main {
   min-height: 90%;
-}
-main::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 table {
   margin-bottom: 1.5rem;
@@ -65,5 +43,54 @@ td {
   padding: 0.5rem;
 }
 footer {
-  margin-top: 2em;
+  margin-top: 2rem;
+}
+a {
+  color: #303030;
+  text-decoration: none;
+}
+
+/* Main content styling */
+header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#banner-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#main-nav {
+  margin-bottom: 1rem;
+}
+
+#main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.about-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.about-intro figure {
+  margin: 0;
+}
+
+.profile-photo {
+  display: block;
 }
