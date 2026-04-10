@@ -24,37 +24,46 @@
           width="150"
         />
         <div id="banner-content">
-          <h1>Contact</h1>
-          <nav id="main-nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+          <div id="title">
+            <h1>Ryan Waller</h1>
+            <h2>Information Accessibility and Universal Design</h2>
+          </div>
+          <div>
+            <nav id="main-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <p>If you have questions, please submit the form below.</p>
-      <form>
-        <p>
-          <label for="name-field">Name</label>
-          <input id="name-field" type="text" name="name" required />
-        </p>
-        <p>
-          <label for="email-field">Email</label>
-          <input id="email-field" type="email" name="email" required />
-        </p>
-        <p>
-          <label for="subject-field">Subject</label>
-          <input id="subject-field" type="text" name="subject" required />
-        </p>
-        <p>
-          <label for="msg-field">Message</label>
-          <textarea id="msg-field" name="message" required></textarea>
-        </p>
-        <button type="submit">Submit</button>
+      <form id="contact-form">
+        <div id="contact-fields">
+          <p class="contact-field">
+            <label for="name-field">Name</label>
+            <input id="name-field" type="text" name="name" required />
+          </p>
+          <p class="contact-field">
+            <label for="email-field">Email</label>
+            <input id="email-field" type="email" name="email" required />
+          </p>
+          <p class="contact-field">
+            <label for="subject-field">Subject</label>
+            <input id="subject-field" type="text" name="subject" required />
+          </p>
+          <p class="contact-field">
+            <label for="msg-field">Message</label>
+            <textarea id="msg-field" name="message" required></textarea>
+          </p>
+        </div>
+        <div id="contact-submit">
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
     <footer>
