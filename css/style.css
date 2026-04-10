@@ -41,7 +41,7 @@ a {
 
 /* Global layout */
 main {
-  padding: 2.5rem;
+  padding: 3rem;
   flex: 1;
 }
 
@@ -73,10 +73,10 @@ td {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  height: 10rem;
+  height: 12rem;
   padding: 2.5rem;
   box-sizing: border-box;
-  background-color: gray;
+  background-color: #d3d3d3;
 }
 
 #banner-content {
@@ -157,6 +157,11 @@ td {
 .contact-field input,
 textarea {
   width: 65%;
+}
+
+.contact-field textarea {
+  resize: none;
+  height: 12rem;
 }
 
 #contact-submit button {
