@@ -1,11 +1,11 @@
 /* Base page styling */
-html {
+html,
+body {
   height: 100%;
   background-color: #e8e8e8;
 }
 
 body {
-  height: 100%;
   width: 80%;
   margin: 0 auto;
   font-family: sans-serif;
@@ -13,6 +13,8 @@ body {
   line-height: 1.45;
   background-color: #f8f8f8;
   color: #303030;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Typography */
@@ -35,22 +37,22 @@ p {
 
 a {
   color: #303030;
-  text-decoration: none;
 }
 
 /* Global layout */
-header {
-  width: 100%;
-  background-color: gray;
-}
-
 main {
-  min-height: 90%;
-  padding: 0 2.5rem;
+  padding: 2.5rem;
+  flex: 1;
 }
 
 footer {
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  color: #f8f8f8;
+  padding: 1rem;
 }
 
 /* Shared components */
@@ -69,19 +71,21 @@ td {
 #banner {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
-  height: 6rem;
-  margin-bottom: 3rem;
+  height: 10rem;
   padding: 2.5rem;
+  box-sizing: border-box;
+  background-color: gray;
 }
 
 #banner-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1.5rem;
   width: 100%;
-  height: 100%;
 }
 
 #main-nav ul {
