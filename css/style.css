@@ -72,6 +72,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   gap: 2rem;
   height: 12rem;
   padding: 2.5rem;
@@ -99,6 +100,10 @@ td {
 
 .logo {
   flex-shrink: 0;
+  position: absolute;
+  left: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .profile-photo {
