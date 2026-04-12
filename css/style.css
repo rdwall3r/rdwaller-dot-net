@@ -67,7 +67,10 @@ caption {
   padding-top: 0.4rem;
 }
 
-table,
+tbody tr:nth-child(odd) {
+  background-color: #e0e0e0;
+}
+
 th,
 td {
   border: 1px solid #303030;
