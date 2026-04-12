@@ -60,12 +60,25 @@ table {
   margin-bottom: 1.5rem;
 }
 
+caption {
+  caption-side: bottom;
+  text-align: right;
+  font-size: 0.9rem;
+  padding-top: 0.4rem;
+}
+
 table,
 th,
 td {
   border: 1px solid #303030;
   padding: 0.5rem;
   text-align: left;
+}
+
+#services {
+  display: flex;
+  gap: 6rem;
+  margin: 3rem 0;
 }
 
 #banner {
