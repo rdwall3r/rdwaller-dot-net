@@ -53,7 +53,7 @@ button:hover,
 button:focus,
 input:focus,
 textarea:focus {
-  outline: 3px solid #f4b400;
+  outline: 3px solid #38bdf8;
   outline-offset: 3px;
 }
 
@@ -68,7 +68,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1f1f1f;
+  background-color: #2c3e50;
   color: #ffffff;
   padding: 1rem;
 }
@@ -94,7 +94,7 @@ caption {
 }
 
 thead {
-  background-color: #1f1f1f;
+  background-color: #2c3e50;
   color: #ffffff;
 }
 
@@ -129,9 +129,9 @@ td {
   height: 12rem;
   padding: 2.5rem;
   box-sizing: border-box;
-  background-color: #1f1f1f;
+  background-color: #2c3e50;
   color: #ffffff;
-  border-bottom: 4px solid #f4b400;
+  border-bottom: 4px solid #38bdf8;
 }
 
 #banner a {
@@ -140,7 +140,7 @@ td {
 
 #banner a:hover,
 #banner a:focus {
-  color: #f4b400;
+  color: #7dd3fc;
 }
 
 #banner-content {
@@ -249,7 +249,7 @@ textarea {
   font-size: 1rem;
   font-weight: bold;
   color: #1a1a1a;
-  background-color: #f4b400;
+  background-color: #38bdf8;
   border: 2px solid #1a1a1a;
   border-radius: 4px;
   cursor: pointer;
@@ -259,7 +259,7 @@ textarea {
 #contact-submit button:focus,
 .toggle-css:hover,
 .toggle-css:focus {
-  background-color: #ffd95a;
+  background-color: #7dd3fc;
 }
 
 /* Responsive adjustment */
