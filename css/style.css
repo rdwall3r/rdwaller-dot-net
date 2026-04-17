@@ -1,12 +1,11 @@
 /* Base page styling */
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
   background-color: #e6e6e6;
 }
 
 body {
-  width: 80%;
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
@@ -59,6 +58,7 @@ textarea:focus {
 main {
   padding: 3rem 3rem 1.5rem;
   flex: 1;
+  min-height: 38rem;
 }
 
 footer {
@@ -180,7 +180,6 @@ td {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
-  height: 15rem;
 }
 
 #self-portrait {
@@ -263,10 +262,6 @@ textarea {
 
 /* Responsive adjustment */
 @media (max-width: 900px) {
-  body {
-    width: 100%;
-  }
-
   #banner {
     height: auto;
     padding: 2rem 1rem;
@@ -306,6 +301,16 @@ textarea {
   padding: 0;
   list-style: none;
   width: 100%;
+  background-color: #e6e6e6;
+  width: 100%;
+  border: 1px solid #444444;
+}
+
+#mobile-nav ul li {
+  border-bottom: 1px solid #444444;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
 #main-nav {
@@ -314,6 +319,14 @@ textarea {
 
 .menu-icon {
   display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.menu-icon img {
+  width: 40px;
+  height: 40px;
 }
 
 body {
@@ -344,5 +357,6 @@ body {
   /* ---------------------- Styles ----------------------- */
   body {
     background-color: blue;
+    width: 80%;
   }
 }
