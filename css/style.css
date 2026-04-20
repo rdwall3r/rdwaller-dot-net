@@ -8,7 +8,6 @@ body {
 body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
   line-height: 1.45;
   color: #1a1a1a;
   display: flex;
@@ -91,6 +90,13 @@ caption {
   color: #333333;
 }
 
+figcaption {
+  text-align: center;
+  font-size: 0.95rem;
+  padding-top: 0.5rem;
+  color: #333333;
+}
+
 thead {
   background-color: #2c3e50;
   color: #ffffff;
@@ -115,7 +121,7 @@ td {
   position: relative;
   gap: 2rem;
   height: 12rem;
-  padding: 2.5rem;
+  padding: 1rem;
   box-sizing: border-box;
   background-color: #2c3e50;
   color: #ffffff;
@@ -123,7 +129,7 @@ td {
 }
 
 #logo-container {
-  max-width: 40px;
+  max-width: 7rem;
   height: auto;
 }
 
@@ -141,7 +147,6 @@ td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
   width: 100%;
 }
 
@@ -154,23 +159,21 @@ td {
   list-style: none;
 }
 
-.logo {
-  flex-shrink: 0;
-  position: absolute;
-  left: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+#logo {
+  width: 100%;
 }
 
 /* Home page */
-#services {
-  display: flex;
-  gap: 6rem;
-  margin: 3rem 0 1.5rem;
+
+#intro,
+#about-intro {
+  max-width: 40rem;
 }
 
-#services > div {
-  flex: 1;
+#services {
+  display: flex;
+  gap: 5rem;
+  margin: 3rem 0 1.5rem;
 }
 
 /* About page */
@@ -269,11 +272,10 @@ textarea {
 @media (max-width: 900px) {
   #banner {
     height: auto;
-    padding: 2rem 1rem;
     flex-direction: column;
   }
 
-  .logo {
+  #logo {
     position: static;
     transform: none;
   }
@@ -304,10 +306,8 @@ textarea {
   gap: 0.5rem;
   margin: 0;
   padding: 0;
-  list-style: none;
   width: 100%;
   background-color: #2c3e50;
-  width: 100%;
   border: 1px solid #444444;
 }
 
@@ -334,8 +334,8 @@ textarea {
 }
 
 .menu-icon img {
-  width: 40px;
-  height: 40px;
+  width: 2.3rem;
+  height: 2.5rem;
 }
 
 #banner {
@@ -356,16 +356,25 @@ textarea {
   .menu-icon {
     display: none;
   }
+  html {
+    font-size: 1.125rem;
+  }
   #banner {
     background-color: green;
+  }
+  #logo-container {
+    max-width: 8rem;
   }
 }
 
 /* -------------------- Desktop Screen --------------------- */
 @media all and (min-width: 1026px) {
   /* ---------------------- Styles ----------------------- */
+  html {
+    font-size: 1.25rem;
+  }
   body {
-    max-width: 80%;
+    max-width: 80rem;
   }
   #banner {
     background-color: blue;
