@@ -210,7 +210,8 @@ td {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   margin-top: 1rem;
   border: 2px solid #444444;
   border-radius: 8px;
@@ -268,22 +269,14 @@ textarea {
   background-color: #7dd3fc;
 }
 
-/* Responsive adjustment */
-@media (max-width: 900px) {
-  #banner {
-    height: auto;
-    flex-direction: column;
-  }
+#banner {
+  height: auto;
+  flex-direction: column;
+}
 
-  #logo {
-    position: static;
-    transform: none;
-  }
-
-  #services {
-    flex-direction: column;
-    gap: 2rem;
-  }
+#services {
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* --------------- Misc. info --------------------- */
@@ -292,10 +285,6 @@ textarea {
   	*/
 /* -------------------- Mobile Screen ---------------------- */
 /* ---------------------- Styles ---------------------- */
-#mobile-nav {
-  display: inherit;
-  margin-top: 1000px;
-}
 
 #mobile-nav ul {
   list-style: none;
@@ -338,19 +327,23 @@ textarea {
   height: 2.5rem;
 }
 
-#banner {
-  background-color: orange;
-}
-
 /* -------------------- Tablet Screen ---------------------- */
 @media all and (min-width: 651px) {
   /* ---------------------- Styles ----------------------- */
+  #banner {
+    flex-direction: row;
+    height: 12rem;
+  }
+  #services {
+    flex-direction: row;
+    gap: 5rem;
+  }
   #mobile-nav {
     display: none;
   }
 
   #main-nav {
-    display: inherit;
+    display: block;
   }
 
   .menu-icon {
@@ -358,9 +351,6 @@ textarea {
   }
   html {
     font-size: 1.125rem;
-  }
-  #banner {
-    background-color: green;
   }
   #logo-container {
     max-width: 8rem;
@@ -375,8 +365,5 @@ textarea {
   }
   body {
     max-width: 80rem;
-  }
-  #banner {
-    background-color: blue;
   }
 }
