@@ -174,8 +174,7 @@ td {
 }
 
 /* Home page */
-#intro,
-#about-intro {
+#intro {
   max-width: 40rem;
 }
 
@@ -191,6 +190,10 @@ td {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
+  max-width: 40rem;
+}
+#about-intro figure {
+  margin: 0;
 }
 
 #self-portrait {
@@ -199,11 +202,6 @@ td {
   flex-flow: column;
   gap: 0.5rem;
 }
-
-#about-intro figure {
-  margin: 0;
-}
-
 .profile-photo {
   display: block;
 }
@@ -279,6 +277,10 @@ textarea {
 /* -------------------- Mobile Screen ---------------------- */
 /* ---------------------- Styles ---------------------- */
 
+#main-nav {
+  display: none;
+}
+
 #mobile-nav {
   display: block;
   margin-top: 20px;
@@ -307,10 +309,6 @@ textarea {
 
 #mobile-nav a {
   color: #ffffff;
-}
-
-#main-nav {
-  display: none;
 }
 
 .menu-icon {
