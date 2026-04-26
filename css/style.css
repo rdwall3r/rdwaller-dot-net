@@ -34,6 +34,10 @@ p {
   margin-bottom: 0.75rem;
 }
 
+ul {
+  padding-left: 1.25rem;
+}
+
 /* Links */
 a {
   color: #0b57d0;
@@ -117,11 +121,11 @@ td {
 /* Banner and navigation */
 #banner {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  gap: 2rem;
-  height: 12rem;
+  gap: 1rem;
   padding: 1rem;
   box-sizing: border-box;
   background-color: #2c3e50;
@@ -148,7 +152,13 @@ td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+}
+
+#banner-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #main-nav ul {
@@ -165,7 +175,6 @@ td {
 }
 
 /* Home page */
-
 #intro,
 #about-intro {
   max-width: 40rem;
@@ -173,18 +182,12 @@ td {
 
 #services {
   display: flex;
-  gap: 5rem;
+  flex-direction: column;
+  gap: 2rem;
   margin: 3rem 0 1.5rem;
 }
 
 /* About page */
-#banner-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 #about-intro {
   display: flex;
   align-items: flex-start;
@@ -270,27 +273,17 @@ textarea {
   background-color: #7dd3fc;
 }
 
-#banner {
-  height: auto;
-  flex-direction: column;
-}
-
-#services {
-  flex-direction: column;
-  gap: 2rem;
-}
+/* --------------- Misc. info --------------------- */
+/*
+  		Page breaks at 0 to 650px, 651px to 1025px, 1026px to max width.
+  	*/
+/* -------------------- Mobile Screen ---------------------- */
+/* ---------------------- Styles ---------------------- */
 
 #mobile-nav {
   display: block;
   margin-top: 20px;
 }
-
-/* --------------- Misc. info --------------------- */
-/*   
-  		Page breaks at 0 to 650px, 651px to 1025px, 1026px to max width. 
-  	*/
-/* -------------------- Mobile Screen ---------------------- */
-/* ---------------------- Styles ---------------------- */
 
 #mobile-nav ul {
   list-style: none;
@@ -336,35 +329,28 @@ textarea {
 /* -------------------- Tablet Screen ---------------------- */
 @media all and (min-width: 651px) {
   /* ---------------------- Styles ----------------------- */
+  html {
+    font-size: 1.125rem;
+  }
   main {
     padding: 3rem 3rem 1.5rem;
   }
   #banner {
     flex-direction: row;
     height: 12rem;
+    gap: 3rem;
   }
-  #services {
-    flex-direction: row;
-    gap: 5rem;
+  #logo-container {
+    width: 8rem;
   }
   #mobile-nav {
     display: none;
   }
-
   #main-nav {
     display: block;
   }
-
   .menu-icon {
     display: none;
-  }
-  html {
-    font-size: 1.125rem;
-  }
-  #logo-container {
-    max-width: 8rem;
-    position: absolute;
-    left: 1rem;
   }
 }
 
@@ -376,5 +362,9 @@ textarea {
   }
   body {
     max-width: 75rem;
+  }
+  #services {
+    flex-direction: row;
+    gap: 5rem;
   }
 }
