@@ -270,6 +270,15 @@ textarea {
   background-color: #7dd3fc;
 }
 
+[aria-invalid="true"] {
+  border-color: red;
+  box-shadow: 0 0 2px red;
+}
+
+.errmsg p {
+  color: red; /* Make text red */
+}
+
 /* --------------- Misc. info --------------------- */
 /*
   		Page breaks at 0 to 650px, 651px to 1025px, 1026px to max width.

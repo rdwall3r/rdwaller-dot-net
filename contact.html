@@ -52,19 +52,54 @@
         <div id="contact-fields">
           <p class="contact-field">
             <label for="name-field">Name</label>
-            <input id="name-field" type="text" name="name" required />
+            <input
+              id="name-field"
+              type="text"
+              name="name"
+              aria-required="true"
+              onkeyup="validateField(event)" onblur="validateField(event)"
+              data-errmsg="You must enter your name."
+              required
+            />
+            <div id="name-field-err" class="errmsg"></div>
           </p>
           <p class="contact-field">
             <label for="email-field">Email</label>
-            <input id="email-field" type="email" name="email" required />
+            <input
+              id="email-field"
+              type="email"
+              name="email"
+              aria-required="true"
+              onkeyup="validateField(event)" onblur="validateField(event)"
+              data-errmsg="You must enter your email address."
+              required
+            />
+            <div id="email-field-err" class="errmsg"></div>
           </p>
           <p class="contact-field">
             <label for="subject-field">Subject</label>
-            <input id="subject-field" type="text" name="subject" required />
+            <input
+              id="subject-field"
+              type="text"
+              name="subject"
+              aria-required="true"
+              onkeyup="validateField(event)" onblur="validateField(event)"
+              data-errmsg="You must enter a subject."
+              required
+            />
+            <div id="subject-field-err" class="errmsg"></div>
           </p>
           <p class="contact-field">
             <label for="msg-field">Message</label>
-            <textarea id="msg-field" name="message" required></textarea>
+            <textarea
+              id="msg-field"
+              name="message"
+              aria-required="true"
+              onkeyup="validateField(event)" onblur="validateField(event)"
+              data-errmsg="You must enter a message."
+              required
+            ></textarea>
+            <div id="msg-field-err" class="errmsg"></div>
           </p>
         </div>
         <div id="contact-submit">
@@ -83,6 +118,6 @@
         <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
   </body>
 </html>
