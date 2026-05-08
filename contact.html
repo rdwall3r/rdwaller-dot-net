@@ -50,57 +50,69 @@
       <p>If you have questions, please submit the form below.</p>
       <form id="contact-form">
         <div id="contact-fields">
-          <p class="contact-field">
-            <label for="name-field">Name</label>
-            <input
-              id="name-field"
-              type="text"
-              name="name"
-              aria-required="true"
-              onkeyup="validateField(event)" onblur="validateField(event)"
-              data-errmsg="You must enter your name."
-              required
-            />
+          <div class="contact-field">
+            <div class="field-content">
+              <label for="name-field">Name</label>
+              <input
+                id="name-field"
+                type="text"
+                name="name"
+                aria-required="true"
+                onkeyup="validateField(event)"
+                onblur="validateField(event)"
+                data-errmsg="You must enter your name."
+                required
+              />
+            </div>
             <div id="name-field-err" class="errmsg"></div>
-          </p>
-          <p class="contact-field">
-            <label for="email-field">Email</label>
-            <input
-              id="email-field"
-              type="email"
-              name="email"
-              aria-required="true"
-              onkeyup="validateField(event)" onblur="validateField(event)"
-              data-errmsg="You must enter your email address."
-              required
-            />
+          </div>
+          <div class="contact-field">
+            <div class="field-content">
+              <label for="email-field">Email</label>
+              <input
+                id="email-field"
+                type="email"
+                name="email"
+                aria-required="true"
+                onkeyup="validateField(event)"
+                onblur="validateField(event)"
+                data-errmsg="You must enter your email address."
+                required
+              />
+            </div>
             <div id="email-field-err" class="errmsg"></div>
-          </p>
-          <p class="contact-field">
-            <label for="subject-field">Subject</label>
-            <input
-              id="subject-field"
-              type="text"
-              name="subject"
-              aria-required="true"
-              onkeyup="validateField(event)" onblur="validateField(event)"
-              data-errmsg="You must enter a subject."
-              required
-            />
+          </div>
+          <div class="contact-field">
+            <div class="field-content">
+              <label for="subject-field">Subject</label>
+              <input
+                id="subject-field"
+                type="text"
+                name="subject"
+                aria-required="true"
+                onkeyup="validateField(event)"
+                onblur="validateField(event)"
+                data-errmsg="You must enter a subject."
+                required
+              />
+            </div>
             <div id="subject-field-err" class="errmsg"></div>
-          </p>
-          <p class="contact-field">
-            <label for="msg-field">Message</label>
-            <textarea
-              id="msg-field"
-              name="message"
-              aria-required="true"
-              onkeyup="validateField(event)" onblur="validateField(event)"
-              data-errmsg="You must enter a message."
-              required
-            ></textarea>
+          </div>
+          <div class="contact-field">
+            <div class="field-content">
+              <label for="msg-field">Message</label>
+              <textarea
+                id="msg-field"
+                name="message"
+                aria-required="true"
+                onkeyup="validateField(event)"
+                onblur="validateField(event)"
+                data-errmsg="You must enter a message."
+                required
+              ></textarea>
+            </div>
             <div id="msg-field-err" class="errmsg"></div>
-          </p>
+          </div>
         </div>
         <div id="contact-submit">
           <button type="submit">Submit</button>

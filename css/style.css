@@ -223,16 +223,23 @@ td {
 #contact-fields {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
   border-bottom: 1px solid #444444;
   padding-bottom: 0.75rem;
+  gap: 1rem;
 }
 
 .contact-field {
   display: flex;
+  flex-direction: column;
+}
+
+.field-content {
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
+}
+
+.contact-field label {
+  width: 5rem;
 }
 
 .contact-field input,
@@ -270,13 +277,14 @@ textarea {
   background-color: #7dd3fc;
 }
 
-[aria-invalid="true"] {
+.contact-field [aria-invalid="true"] {
   border-color: red;
   box-shadow: 0 0 2px red;
 }
 
 .errmsg p {
-  color: red; /* Make text red */
+  color: red;
+  font-size: 0.9rem;
 }
 
 /* --------------- Misc. info --------------------- */
