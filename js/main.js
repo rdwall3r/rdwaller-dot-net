@@ -1,17 +1,15 @@
-$(document).ready(function() {
-   $('.toggle-css').on('click', function(e) {
-      var $this = $(this);
-      var stylesheet = $('link[href="css/style.css"]')[0];
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleBtn = document.querySelector('.toggle-css');
+  if (!toggleBtn) return;
 
-      if (stylesheet.disabled == true) {
-         stylesheet.disabled = false;
-         $(this).html('Disable CSS');
-      }
-      else {
-         stylesheet.disabled = true;
-         $(this).html('Enable CSS');
-      }
-
-      return false;
-   });
+  toggleBtn.addEventListener('click', function () {
+    const stylesheet = document.querySelector('link[href="css/style.css"]');
+    if (stylesheet.disabled) {
+      stylesheet.disabled = false;
+      this.textContent = 'Disable CSS';
+    } else {
+      stylesheet.disabled = true;
+      this.textContent = 'Enable CSS';
+    }
+  });
 });

@@ -10,7 +10,6 @@
     <!-- Do not modify the next three lines. -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/jquery.min.js"></script>
   </head>
   <body>
     <header id="banner">
@@ -32,17 +31,16 @@
       <div id="banner-content">
         <div id="banner-title">
           <h1>Ryan Waller</h1>
-          <h2>Information Accessibility <br />and Universal Design</h2>
+          <p class="banner-subtitle">Frontend Developer &amp; Universal Design</p>
         </div>
-        <div>
-          <nav id="main-nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html" aria-current="page">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav id="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -76,10 +74,11 @@
       <p>Copyright &copy; 2026, Ryan Waller</p>
       <button class="toggle-css">Disable CSS</button>
     </footer>
-    <nav id="mobile-nav">
+    <nav id="mobile-nav" aria-label="Mobile navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="tools.html">Tools</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>

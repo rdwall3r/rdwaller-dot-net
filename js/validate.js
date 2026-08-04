@@ -1,151 +1,100 @@
-$(document).ready(function () {
-  var $required = $("form").find("[required], [aria-required]");
-  var $form = $required.closest("form");
-  var $fields = $form.find("input, textarea, select").not("[type=submit]");
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('form');
+  if (!form) return;
 
-  $form.on("submit", function (e) {
-    // needed if HTML5 validation is not supported
-    var bErr = false;
+  const requiredFields = Array.from(form.querySelectorAll('[required], [aria-required]'));
+  const fields = Array.from(form.querySelectorAll('input, textarea, select')).filter(
+    function (el) { return el.type !== 'submit'; }
+  );
 
-    // check all required fields
-    $required.each(function (index) {
-      bErr = !isValid($(this));
+  form.addEventListener('submit', function (e) {
+    let hasError = false;
+    requiredFields.forEach(function (field) {
+      if (!isValid(field)) hasError = true;
     });
-
-    if (bErr) {
-      $required.filter("[aria-invalid=true]").first().focus(); // set focus on first invalid field
-      e.preventDefault(); // prevent the form from submitting
-      return false;
+    if (hasError) {
+      const firstInvalid = requiredFields.find(function (f) {
+        return f.getAttribute('aria-invalid') === 'true';
+      });
+      if (firstInvalid) firstInvalid.focus();
+      e.preventDefault();
     }
   });
 
-  $required.on("invalid", function (e) {
-    // Hook the HTML5 validation
-    return !isValid($(this)); // validate the field
+  requiredFields.forEach(function (field) {
+    field.addEventListener('invalid', function () {
+      isValid(field);
+    });
   });
 
-  $fields.on("keyup blur", function (e) {
-    validateField(e);
+  fields.forEach(function (field) {
+    field.addEventListener('keyup', validateField);
+    field.addEventListener('blur', validateField);
   });
 });
 
 function validateField(e) {
-  console.log("hi");
-  e = e || window.event;
-  var target = e.target || e.srcElement;
-  var $field = $(target);
+  const field = e.target;
 
-  // Ignore tab key or shift-tab if field is empty
-  if ((e.keyCode == "9" || e.keyCode == "16") && $field.val().length === 0) {
-    return false;
+  if ((e.key === 'Tab' || e.key === 'Shift') && field.value.length === 0) {
+    return;
   }
 
-  // Perform HTML5 native browser validation (if supported)
-  if (typeof $field[0].checkValidity === "function") {
-    $field[0].checkValidity();
+  if (typeof field.checkValidity === 'function') {
+    field.checkValidity();
   }
 
-  isValid($field);
-  return true;
+  isValid(field);
 }
 
-function isValid($field) {
-  var errID = $field.attr("id") + "-err";
-  var $errContainer = $("#" + errID);
-  var func = null;
-  var msg = $field.attr("data-errmsg");
+function isValid(field) {
+  const errID = field.id + '-err';
+  const errContainer = document.getElementById(errID);
+  const msg = field.getAttribute('data-errmsg');
+  let validFunc = null;
 
-  switch ($field.attr("type")) {
-    case "text": {
-      func = isValidLength;
+  switch (field.type) {
+    case 'text':
+      validFunc = isValidLength;
       break;
-    }
-    case "email": {
-      func = isValidEmail;
+    case 'email':
+      validFunc = isValidEmail;
       break;
-    }
-    case "tel": {
-      func = isValidTelephone;
+    case 'tel':
+      validFunc = isValidTelephone;
       break;
-    }
-    case "subject": {
-      func = isValidLength;
-      break;
-    }
-    default: {
-      if ($field.prop("tagName").toLowerCase() !== "textarea") {
-        return true;
-      }
-      func = isValidLength;
-    }
+    default:
+      if (field.tagName.toLowerCase() !== 'textarea') return true;
+      validFunc = isValidLength;
   }
 
-  if (!func($field)) {
-    if ($field.attr("aria-invalid") === "true") {
-      // do nothing if the field was already invalid
-      return false;
-    }
-
-    // field is invalid: add the alert role and error message.
-    $errContainer
-      .attr("role", "alert")
-      .html('<p id="' + errID + '-msg">' + msg + "</p>");
-
-    // Set invalid attribute to true and associate the field with the error message.
-    $field.attr({
-      "aria-invalid": "true",
-      "aria-describedby": errID + "-msg",
-    });
-
+  if (!validFunc(field)) {
+    if (field.getAttribute('aria-invalid') === 'true') return false;
+    errContainer.setAttribute('role', 'alert');
+    errContainer.innerHTML = '<p id="' + errID + '-msg">' + msg + '</p>';
+    field.setAttribute('aria-invalid', 'true');
+    field.setAttribute('aria-describedby', errID + '-msg');
     return false;
   } else {
-    // Field is valid
-    // reset the invalid attribute and remove the describedby association.
-    $field.removeAttr("aria-describedby").attr("aria-invalid", "false");
-
-    // remove the alert role from the error message container and empty it.
-    $errContainer.removeAttr("role").empty();
+    field.removeAttribute('aria-describedby');
+    field.setAttribute('aria-invalid', 'false');
+    errContainer.removeAttribute('role');
+    errContainer.innerHTML = '';
     return true;
   }
 }
 
-function isValidLength($field) {
-  // check that there is data in the field
-  var value = $field.val();
-  if (value.length < 2) {
-    return false;
-  }
-  return true;
+function isValidLength(field) {
+  return field.value.length >= 2;
 }
 
-function isValidEmail($field) {
-  // check that email is valid
-
-  var value = $field.val();
-
-  if (
-    value.length === 0 ||
-    /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value) === false
-  ) {
-    return false;
-  }
-  return true;
+function isValidEmail(field) {
+  const value = field.value;
+  return value.length > 0 && /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(value);
 }
 
-function isValidTelephone($field) {
-  // check that telephone is valid
-  var value = $field.val();
-
-  // Return true if the field is empty
-  if (value.length === 0) {
-    return true;
-  }
-
-  // Check for valid telephone number format
-  if (
-    /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(value) === false
-  ) {
-    return false;
-  }
-  return true;
+function isValidTelephone(field) {
+  const value = field.value;
+  if (value.length === 0) return true;
+  return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(value);
 }
