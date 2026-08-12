@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=4"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="/tools/"{% if page.url == "/tools/" %} aria-current="page"{% endif %}>Projects</a></li>
+          <li><a href="/writing/"{% if page.url == "/writing/" %} aria-current="page"{% endif %}>Writing</a></li>
+          <li><a href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/rdwaller/"
+            aria-label="Ryan's LinkedIn profile"
+          >
+            <img
+              class="social-icon"
+              src="/assets/icons/InBug-Black.svg"
+              alt="Link to Ryan's LinkedIn profile"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:rdwaller@rdwaller.net" aria-label="Email Ryan">
+            <img
+              class="social-icon"
+              src="/assets/icons/heroicons/envelope.svg"
+              alt="Email Ryan"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
