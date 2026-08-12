@@ -8,15 +8,16 @@
       content="width=device-width, initial-scale=1, maximum-scale=4"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/nav.js" defer></script>
   </head>
   <body>
     <header>
       <nav id="main-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
-          <li><a href="/tools/"{% if page.url == "/tools/" %} aria-current="page"{% endif %}>Projects</a></li>
-          <li><a href="/writing/"{% if page.url == "/writing/" %} aria-current="page"{% endif %}>Writing</a></li>
-          <li><a href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
+          <li><a href="/tools/"{% if page.url == "/tools/" %} aria-current="page"{% endif %} aria-disabled="true">Projects</a></li>
+          <li><a href="/writing/"{% if page.url == "/writing/" %} aria-current="page"{% endif %} aria-disabled="true">Writing</a></li>
+          <li><a href="/contact/"{% if page.url == "/contact/" %} aria-current="page"{% endif %} aria-disabled="true">Contact</a></li>
         </ul>
       </nav>
     </header>
