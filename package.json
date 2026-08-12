@@ -1,0 +1,24 @@
+{
+  "name": "rdwaller-dot-net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdwall3r/rdwaller-dot-net.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rdwall3r/rdwaller-dot-net/issues"
+  },
+  "homepage": "https://github.com/rdwall3r/rdwaller-dot-net#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
