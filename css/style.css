@@ -49,10 +49,14 @@
   outline: 1px solid red;
 } */
 
+/* Attribute selectors */
+
 [aria-disabled="true"] {
   cursor: not-allowed;
   opacity: 0.4;
 }
+
+/* Elements */
 
 body {
   align-items: center;
@@ -66,14 +70,6 @@ body {
   min-height: 100vh;
 }
 
-#contact-section {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-}
-
 figcaption {
   display: flex;
   justify-content: flex-end;
@@ -84,16 +80,47 @@ footer {
   padding: 1rem 0;
 }
 
-.footer-icon {
-  width: 3rem;
-}
-
 h2 {
   font-weight: var(--weight-bold);
 }
 
 header {
   width: 100%;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Classes */
+
+.footer-icon {
+  width: 3rem;
+}
+
+.main-image {
+  width: 20rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+}
+
+/* IDs */
+
+#contact-section,
+#projects-section {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #intro {
@@ -105,17 +132,6 @@ header {
   gap: 5rem;
   justify-content: center;
   margin-top: 10rem;
-}
-
-main {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 100%;
-}
-
-.main-image {
-  width: 20rem;
 }
 
 #main-nav {
@@ -143,14 +159,15 @@ main {
   width: 60%;
 }
 
+#projects-section li {
+  padding: 0.33rem 0;
+}
+
+#projects-section ul {
+  padding-left: 1.5rem;
+}
+
 #self-portrait {
   display: flex;
   width: 20rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  list-style: none;
 }
