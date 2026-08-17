@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+
+<section id="projects-section">
+  <div id="projects">
+    <h2 id="projects-heading">Projects</h2>
+      <ul>
+        {% for project in collections.projects | reverse %}
+          <li>
+            <div class="project-item">
+              <div><a href="{{ project.url }}">{{ project.data.title }}</a></div>
+              <div>{{ project.data.subtitle }}</div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+  </div>
+</section>

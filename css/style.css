@@ -23,6 +23,7 @@
   /* Warm mid-tones */
   --color-clay: #a96e5b;
   --color-khaki: #a79e84;
+  --color-chocolate: #6b4226;
 
   /* Rose */
   --color-blush: #e4d1d1;
@@ -95,6 +96,22 @@ main {
   width: 100%;
 }
 
+a:link {
+  color: var(--color-spruce);
+}
+
+a:visited {
+  color: var(--color-chocolate);
+}
+
+a:hover {
+  color: var(--color-teal);
+}
+
+a:active {
+  color: var(--color-clay);
+}
+
 /* Classes */
 
 .footer-icon {
@@ -126,6 +143,8 @@ main {
 #contact-section,
 #projects-section,
 #writing-section,
+#projects-section,
+#project-section,
 #post-section {
   align-items: center;
   align-self: center;
