@@ -51,7 +51,7 @@
 
 /* Attribute selectors */
 
-[aria-disabled="true"] {
+[aria-disabled='true'] {
   cursor: not-allowed;
   opacity: 0.4;
 }
@@ -112,6 +112,15 @@ main {
   list-style: none;
 }
 
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.post-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
 /* IDs */
 
 #contact-section,
@@ -150,11 +159,11 @@ main {
   text-decoration: none;
 }
 
-#main-nav a:not([aria-disabled="true"]):hover {
+#main-nav a:not([aria-disabled='true']):hover {
   font-weight: var(--weight-semibold);
 }
 
-#main-nav a[aria-current="page"] {
+#main-nav a[aria-current='page'] {
   font-weight: var(--weight-semibold);
 }
 
@@ -171,7 +180,8 @@ main {
   padding: 0.33rem 0;
 }
 
-#projects-section ul {
+#projects-section ul,
+#writing-section ul {
   padding-left: 1.5rem;
 }
 

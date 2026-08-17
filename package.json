@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "homepage": "https://github.com/rdwall3r/rdwaller-dot-net#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.1.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
   }
 }
