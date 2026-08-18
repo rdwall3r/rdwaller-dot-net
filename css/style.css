@@ -179,11 +179,11 @@ main {
   flex-direction: column;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #intro-section {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 2rem;
     justify-content: center;
     margin-top: 10rem;
   }
@@ -232,7 +232,7 @@ main {
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   #main-nav ul {
     display: flex;
     font-size: 1.1rem;
@@ -253,6 +253,12 @@ main {
 }
 
 #self-portrait {
-  display: flex;
-  width: 20rem;
+  width: 15rem;
+  min-width: 15rem;
+}
+
+@media (min-width: 800px) {
+  #self-portrait {
+    width: 20rem;
+  }
 }
