@@ -21,9 +21,9 @@
   --color-teal: #77a8a8;
 
   /* Warm mid-tones */
+  --color-chocolate: #6b4226;
   --color-clay: #a96e5b;
   --color-khaki: #a79e84;
-  --color-chocolate: #6b4226;
 
   /* Rose */
   --color-blush: #e4d1d1;
@@ -58,6 +58,22 @@
 }
 
 /* Elements */
+
+a:link {
+  color: var(--color-spruce);
+}
+
+a:visited {
+  color: var(--color-chocolate);
+}
+
+a:hover {
+  color: var(--color-teal);
+}
+
+a:active {
+  color: var(--color-clay);
+}
 
 body {
   align-items: center;
@@ -96,23 +112,11 @@ main {
   width: 100%;
 }
 
-a:link {
-  color: var(--color-spruce);
-}
-
-a:visited {
-  color: var(--color-chocolate);
-}
-
-a:hover {
-  color: var(--color-teal);
-}
-
-a:active {
-  color: var(--color-clay);
-}
-
 /* Classes */
+
+.breadcrumb {
+  margin-bottom: 2rem;
+}
 
 .footer-icon {
   width: 3rem;
@@ -122,6 +126,11 @@ a:active {
   width: 20rem;
 }
 
+.post-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -129,23 +138,13 @@ a:active {
   list-style: none;
 }
 
-.breadcrumb {
-  margin-bottom: 2rem;
-}
-
-.post-item {
-  display: flex;
-  gap: 0.5rem;
-}
-
 /* IDs */
 
 #contact-section,
-#projects-section,
-#writing-section,
-#projects-section,
+#post-section,
 #project-section,
-#post-section {
+#projects-section,
+#writing-section {
   align-items: center;
   align-self: center;
   display: flex;
@@ -175,14 +174,27 @@ a:active {
 
 #main-nav a {
   color: var(--color-charcoal);
+  display: grid;
   text-decoration: none;
 }
 
-#main-nav a:not([aria-disabled='true']):hover {
-  font-weight: var(--weight-semibold);
+#main-nav a::before {
+  content: attr(data-label);
+  font-weight: var(--weight-bold);
+  grid-area: 1 / 1;
+  visibility: hidden;
+}
+
+#main-nav a span {
+  grid-area: 1 / 1;
 }
 
 #main-nav a[aria-current='page'] {
+  color: var(--color-spruce);
+  font-weight: var(--weight-bold);
+}
+
+#main-nav a:not([aria-disabled='true']):not([aria-current='page']):hover {
   font-weight: var(--weight-semibold);
 }
 
