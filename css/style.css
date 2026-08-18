@@ -107,8 +107,7 @@ figcaption {
 }
 
 footer {
-  margin-top: 5rem;
-  padding: 1rem 0;
+  padding: 3rem 0 1rem;
 }
 
 h2 {
@@ -140,9 +139,27 @@ main {
   width: 20rem;
 }
 
+.page-section {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+}
+
 .post-item {
   display: flex;
   gap: 0.5rem;
+}
+
+.post-list {
+  padding-left: 1.5rem;
+}
+
+.post-list li {
+  padding: 0.33rem 0;
 }
 
 .social-links {
@@ -154,23 +171,9 @@ main {
 
 /* IDs */
 
-#contact-section,
-#post-section,
-#project-section,
-#projects-section,
-#writing-section {
-  align-items: center;
-  align-self: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  width: 75%;
-}
-
 #intro {
   max-width: 30rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 #intro-section {
@@ -241,15 +244,6 @@ main {
     list-style: none;
     max-width: 60%;
   }
-}
-
-#projects-section li {
-  padding: 0.33rem 0;
-}
-
-#projects-section ul,
-#writing-section ul {
-  padding-left: 1.5rem;
 }
 
 #self-portrait {
