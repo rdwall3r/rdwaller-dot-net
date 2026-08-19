@@ -128,10 +128,6 @@ main {
 
 /* Classes */
 
-.breadcrumb {
-  margin-bottom: 2rem;
-}
-
 .footer-icon {
   width: 3rem;
 }
@@ -161,6 +157,10 @@ main {
 
 .post-list li {
   padding: 0.33rem 0;
+}
+
+.return-link {
+  margin: 2rem 0;
 }
 
 .social-links {
