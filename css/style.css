@@ -110,7 +110,8 @@ footer {
   padding: 3rem 0 1rem;
 }
 
-h2 {
+h1 {
+  font-size: 1.5rem;
   font-weight: var(--weight-bold);
 }
 
@@ -222,7 +223,7 @@ main {
 }
 
 #main-nav a[aria-current='page'] {
-  color: var(--color-spruce);
+  color: var(--color-chocolate);
   font-weight: var(--weight-bold);
 }
 
