@@ -12,6 +12,10 @@
   </head>
   <body>
     <header>
+      <div id="site-id-container">
+        <div id="site-id">Ryan Waller</div>
+        <div id="tag-line">Development + Design + Accessibility</div>
+      </div>
       <nav id="main-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="/" data-label="Home"{% if page.url == "/" %} aria-current="page"{% endif %}><span>Home</span></a></li>
@@ -21,10 +25,6 @@
         </ul>
       </nav>
     </header>
-    <div id="site-id-container">
-      <div id="site-id">Ryan Waller</div>
-      <div id="tag-line">Development + Design + Accessibility</div>
-    </div>
     <main>
       {{ content | safe }}
     </main>

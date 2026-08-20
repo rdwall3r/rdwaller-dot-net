@@ -115,8 +115,11 @@ h1 {
 }
 
 header {
+  background-color: var(--color-sage);
   border-bottom: 1px solid
     color-mix(in srgb, var(--color-stone) 67%, transparent);
+  display: flex;
+  height: 6rem;
   width: 100%;
 }
 
@@ -185,9 +188,8 @@ main {
 
 #main-nav {
   align-items: center;
-  background-color: var(--color-sage);
   display: flex;
-  height: 3rem;
+  flex: 1;
   justify-content: center;
   width: 100%;
 }
