@@ -91,7 +91,6 @@ a:active {
 }
 
 body {
-  align-items: center;
   background-color: var(--color-pearl);
   display: flex;
   flex-direction: column;
@@ -185,8 +184,10 @@ main {
 /* IDs */
 
 #main-nav {
+  align-items: center;
   background-color: var(--color-sage);
   display: flex;
+  height: 3rem;
   justify-content: center;
   width: 100%;
 }
@@ -222,7 +223,6 @@ main {
   font-weight: var(--weight-regular);
   justify-content: space-between;
   list-style: none;
-  padding: 1rem 2rem;
   width: 100%;
 }
 
@@ -246,4 +246,13 @@ main {
   #self-portrait {
     width: 20rem;
   }
+}
+
+#site-id-container {
+  margin: 0 1rem;
+}
+
+#site-id {
+  font-size: 2rem;
+  font-weight: var(--weight-bold);
 }
