@@ -2,10 +2,12 @@
 layout: layouts/base.njk
 ---
 
-<section class="content-section">
-  <div id="post">
+<section class="article-container">
+  <div class="content-section">
     <div class="return-link"><a href="../../writing">Back to article list</a></div>
+    {% if showDate %}
     <div><time datetime="{{ page.date.toISOString().slice(0, 10) }}">{{ page.date | readableDate }}</time></div>
+    {% endif %}
     {{ content | safe }}
   </div>
 </section>

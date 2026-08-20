@@ -1,6 +1,7 @@
 ---
 title: rdwaller.net
 subtitle: This site, built with Eleventy, plain HTML and CSS, accessibility
+showDate: true
 ---
 
 # Lorem ipsum dolor sit amet
