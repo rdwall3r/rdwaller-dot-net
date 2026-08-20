@@ -18,6 +18,7 @@
   --color-mist: #c0ded9;
   --color-pewter: #b2c2bf;
   --color-spruce: #587e76;
+  --color-juniper: #1c3829;
   --color-teal: #77a8a8;
 
   /* Warm mid-tones */
@@ -226,7 +227,7 @@ main {
 }
 
 #main-nav a[aria-current='page'] {
-  color: var(--color-chocolate);
+  color: var(--color-juniper);
   font-weight: var(--weight-bold);
 }
 
@@ -255,6 +256,7 @@ main {
 
 #self-portrait {
   min-width: 15rem;
+  padding: 0.5rem;
   width: 15rem;
 }
 

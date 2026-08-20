@@ -15,9 +15,9 @@
       <nav id="main-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="/" data-label="Home"{% if page.url == "/" %} aria-current="page"{% endif %}><span>Home</span></a></li>
-          <li><a href="/projects/" data-label="Projects"{% if page.url == "/projects/" %} aria-current="page"{% endif %}><span>Projects</span></a></li>
-          <li><a href="/writing/" data-label="Writing"{% if page.url == "/writing/" %} aria-current="page"{% endif %}><span>Writing</span></a></li>
-          <li><a href="/contact/" data-label="Contact"{% if page.url == "/contact/" %} aria-current="page"{% endif %}><span>Contact</span></a></li>
+          <li><a href="/projects/" data-label="Projects"{% if page.url.startsWith("/projects/") %} aria-current="page"{% endif %}><span>Projects</span></a></li>
+          <li><a href="/writing/" data-label="Writing"{% if page.url.startsWith("/writing/") %} aria-current="page"{% endif %}><span>Writing</span></a></li>
+          <li><a href="/contact/" data-label="Contact"{% if page.url.startsWith("/contact/") %} aria-current="page"{% endif %}><span>Contact</span></a></li>
         </ul>
       </nav>
     </header>
