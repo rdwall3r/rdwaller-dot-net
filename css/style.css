@@ -96,7 +96,7 @@ body {
   flex-direction: column;
   font-family: system-ui, sans-serif;
   font-weight: var(--weight-regular);
-  line-height: 1.45;
+  line-height: 1.618;
   margin: 0;
   min-height: 100vh;
 }
@@ -111,14 +111,17 @@ footer {
 }
 
 h1 {
-  font-size: 1.5rem;
-  font-weight: var(--weight-bold);
+  font-size: 1.618rem;
 }
 
 header {
   border-bottom: 1px solid
     color-mix(in srgb, var(--color-stone) 67%, transparent);
   width: 100%;
+}
+
+html {
+  font-size: 112.5%;
 }
 
 main {
@@ -144,8 +147,8 @@ main {
   display: flex;
   flex: 1;
   flex-direction: column;
+  max-width: 66ch;
   margin-top: 3rem;
-  width: 75%;
 }
 
 .post-item {
@@ -233,7 +236,6 @@ main {
 
 #main-nav ul {
   display: flex;
-  font-size: 1.1rem;
   font-weight: var(--weight-regular);
   justify-content: space-between;
   list-style: none;
@@ -244,7 +246,6 @@ main {
 @media (min-width: 800px) {
   #main-nav ul {
     display: flex;
-    font-size: 1.1rem;
     font-weight: var(--weight-regular);
     justify-content: space-between;
     list-style: none;
