@@ -30,7 +30,6 @@
 
 ol,
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -165,10 +164,6 @@ strong {
 
 .post-list li {
   padding: 0.33rem 0;
-}
-
-.return-link {
-  margin: 1.5rem 0;
 }
 
 .social-links {

@@ -4,12 +4,15 @@ layout: layouts/base.njk
 
 <section class="article-container">
   <div class="content-section">
-    <div class="return-link">
+    <p>
       <a href="../../{{ returnDestination | lower }}">Back to {{ returnDestination }}</a>
-    </div>
+    </p>
     {% if showDate %}
-    <div><time datetime="{{ page.date.toISOString().slice(0, 10) }}">{{ page.date | readableDate }}</time></div>
+      <p>{{ publishDate | readableDate }}</p>
     {% endif %}
     {{ content | safe }}
+    {% if lastEdited %}
+      <p><em>Last Edited: {{ lastEdited | readableDate }}</em></p>
+    {% endif %}
   </div>
 </section>

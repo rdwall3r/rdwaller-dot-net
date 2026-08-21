@@ -1,5 +1,6 @@
 ---
-date: 2026-08-15
+lastEdited: 2026-08-21
+publishDate: 2026-08-15
 title: Lorem ipsum dolor sit amet
 returnDestination: Writing
 showDate: true
