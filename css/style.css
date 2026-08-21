@@ -134,6 +134,7 @@ strong {
   display: flex;
   flex: 1;
   flex-direction: column;
+  margin-top: 1rem;
   padding: 1rem 2rem;
 }
 
@@ -177,13 +178,6 @@ strong {
 }
 
 /* IDs */
-
-#contact-container {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  margin-top: 6rem;
-}
 
 #home-container {
   align-items: center;
