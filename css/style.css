@@ -6,13 +6,13 @@
   --color-spruce: #385d51;
 
   /* Blues */
-  --color-deep-blue: #00326e;
+  --color-cobalt: #1d5fd6;
 
   /* Warm mid-tones */
   --color-clay: #a96e5b;
 
   /* Purples */
-  --color-eggplant: #4a3358;
+  --color-amethyst: #7a3fb0;
 
   /* Font weights */
   --weight-bold: 600;
@@ -50,11 +50,11 @@ p {
 /* Elements */
 
 a:link {
-  color: var(--color-deep-blue);
+  color: var(--color-cobalt);
 }
 
 a:visited {
-  color: var(--color-eggplant);
+  color: var(--color-amethyst);
 }
 
 a:hover {
