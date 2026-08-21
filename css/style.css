@@ -20,10 +20,6 @@
   --weight-semibold: 400;
 }
 
-/* * {
-  outline: 1px solid red;
-} */
-
 /* Reset */
 
 *,
@@ -34,8 +30,14 @@
 
 ol,
 ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+p {
+  margin-block-start: 0.81em;
+  margin-block-end: 0.81em;
 }
 
 /* Attribute selectors */
@@ -84,9 +86,8 @@ footer {
 }
 
 h1 {
-  font-size: 1.6rem;
-  margin-bottom: 0.25rem;
-  /* margin-top: 0; */
+  font-size: 1.62rem;
+  margin-bottom: 0.81rem;
 }
 
 header {
@@ -271,12 +272,12 @@ strong {
 #site-id {
   font-size: 2rem;
   font-weight: var(--weight-bold);
-  line-height: 1.33;
 }
 
 #site-id-container {
   display: flex;
   flex-direction: column;
+  line-height: 1.33;
 }
 
 @media (min-width: 800px) {
@@ -286,6 +287,5 @@ strong {
 }
 
 #tag-line {
-  line-height: 1.33;
   width: 25ch;
 }
