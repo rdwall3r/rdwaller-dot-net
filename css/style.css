@@ -93,15 +93,15 @@ header {
   border-bottom: 1px solid;
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
-  justify-content: center;
+  gap: 1.62rem;
   margin: 0 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 @media (min-width: 800px) {
   header {
     flex-direction: row;
+    gap: 2rem;
     justify-content: flex-end;
   }
 }
@@ -273,14 +273,4 @@ strong {
   display: flex;
   flex-direction: column;
   line-height: 1.33;
-}
-
-@media (min-width: 800px) {
-  #site-id-container {
-    align-items: normal;
-  }
-}
-
-#tag-line {
-  width: 25ch;
 }
