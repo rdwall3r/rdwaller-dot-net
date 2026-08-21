@@ -1,7 +1,8 @@
 ---
+returnDestination: Projects
 title: rdwaller.net
-subtitle: This site, built with Eleventy, plain HTML and CSS, accessibility
-showDate: true
+showDate: false
+subtitle: This site, using Eleventy templating with plain HTML/JS/CSS
 ---
 
 # Lorem ipsum dolor sit amet

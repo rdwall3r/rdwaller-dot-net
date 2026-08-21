@@ -1,6 +1,7 @@
 ---
-title: Lorem ipsum dolor sit amet
 date: 2026-08-15
+title: Lorem ipsum dolor sit amet
+returnDestination: Writing
 showDate: true
 ---
 
