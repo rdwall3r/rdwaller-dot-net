@@ -253,11 +253,11 @@ strong {
   width: 15rem;
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   #self-portrait {
     width: 20rem;
   }
-}
+} */
 
 #self-portrait img {
   border-radius: 0%;
