@@ -86,7 +86,13 @@ footer {
 
 h1 {
   font-size: 1.62rem;
-  margin-bottom: 0.81rem;
+  margin-bottom: 0.62rem;
+}
+
+h2 {
+  font-size: 1.22rem;
+  font-weight: var(--weight-semibold);
+  margin-bottom: 0.62rem;
 }
 
 header {
