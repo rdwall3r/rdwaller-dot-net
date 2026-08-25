@@ -276,3 +276,8 @@ strong {
   flex-direction: column;
   line-height: 1.33;
 }
+
+#site-id-container a {
+  color: black;
+  text-decoration: none;
+}

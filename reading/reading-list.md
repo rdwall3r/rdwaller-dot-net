@@ -1,7 +1,7 @@
 ---
 returnDestination: Writing
 showDate: false
-title: View my reading list
+title: My reading list
 ---
 
 <h1>My Reading List</h1>

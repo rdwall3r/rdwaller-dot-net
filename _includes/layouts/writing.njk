@@ -19,14 +19,14 @@ layout: layouts/base.njk
     </p>
     <p>
       {% set readingList = collections.reading[0] %}
-        <a href="{{ readingList.url }}">
-          {{ readingList.data.title }}
+      <a class="link-with-icon" href="{{ readingList.url }}">
+        {{ readingList.data.title }}
         <img
           alt=""
           class="icon-small"
           src="/assets/icons/heroicons/book-open-solid.svg"
         />
-        </a>
+      </a>
     </p>
   </div>
 </section>
