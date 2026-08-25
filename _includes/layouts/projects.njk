@@ -5,13 +5,11 @@ layout: layouts/base.njk
 <section class="article-container">
   <div class="content-section">
     <h1 id="projects-heading">Projects</h1>
-      <ul class="post-list">
+      <ul class="project-list">
         {% for project in collections.projects | reverse %}
           <li>
-            <div class="project-item">
-              <div><a href="{{ project.url }}">{{ project.data.title }}</a></div>
-              <div>{{ project.data.subtitle }}</div>
-            </div>
+              <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
+              <p>{{ project.data.subtitle }}</p>
           </li>
         {% endfor %}
       </ul>

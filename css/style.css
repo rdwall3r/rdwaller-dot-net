@@ -92,7 +92,7 @@ h1 {
 h2 {
   font-size: 1.22rem;
   font-weight: var(--weight-semibold);
-  margin-bottom: 0.62rem;
+  margin-bottom: 0rem;
 }
 
 header {
@@ -158,18 +158,14 @@ strong {
   width: 20rem;
 }
 
-.post-item {
+.post-list li {
   display: flex;
-  flex-direction: column;
   gap: 0.5rem;
 }
 
-.post-list {
-  padding-left: 1.5rem;
-}
-
-.post-list li {
-  padding: 0.33rem 0;
+.project-list,
+.reading-list {
+  list-style-type: none;
 }
 
 .social-links {
@@ -258,12 +254,6 @@ strong {
   min-width: 15rem;
   width: 15rem;
 }
-
-/* @media (min-width: 800px) {
-  #self-portrait {
-    width: 20rem;
-  }
-} */
 
 #self-portrait img {
   border-radius: 0%;
