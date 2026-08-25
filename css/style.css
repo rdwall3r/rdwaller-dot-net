@@ -150,8 +150,14 @@ strong {
   max-width: 65ch;
 }
 
-.footer-icon {
+.icon-medium {
+  vertical-align: middle;
   width: 3rem;
+}
+
+.icon-small {
+  vertical-align: middle;
+  width: 1rem;
 }
 
 .main-image {
