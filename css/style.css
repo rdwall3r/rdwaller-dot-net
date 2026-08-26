@@ -71,7 +71,7 @@ body {
   font-family: system-ui, sans-serif;
   font-weight: var(--weight-regular);
   line-height: 1.62;
-  margin: 0;
+  margin: 0 2rem;
   min-height: 100vh;
 }
 
@@ -100,7 +100,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.62rem;
-  margin: 0 1rem;
   padding: 1rem;
 }
 
@@ -148,6 +147,7 @@ strong {
   display: flex;
   flex-direction: column;
   max-width: 65ch;
+  min-width: 28ch;
 }
 
 .icon-medium {
