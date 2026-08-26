@@ -64,6 +64,10 @@ a:active {
   color: var(--color-clay);
 }
 
+blockquote {
+  margin: 0 2em;
+}
+
 body {
   background-color: var(--color-pearl);
   display: flex;
@@ -78,10 +82,6 @@ body {
 figcaption {
   display: flex;
   justify-content: flex-end;
-}
-
-footer {
-  padding: 2rem 0 1rem;
 }
 
 h1 {
@@ -166,7 +166,8 @@ strong {
 
 .post-list li {
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .project-list,
@@ -182,6 +183,10 @@ strong {
 }
 
 /* IDs */
+
+#base-footer {
+  padding: 2rem 0 1rem;
+}
 
 #home-container {
   align-items: center;

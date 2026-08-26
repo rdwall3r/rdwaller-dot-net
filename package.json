@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"**/*.js\"",
+    "format": "prettier --write \"**/*.{js,md}\"",
     "a11y-scan": "bash scripts/a11y-scan.sh"
   },
   "repository": {

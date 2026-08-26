@@ -17,4 +17,8 @@ export default function (eleventyConfig) {
   eleventyConfig.setServerOptions({
     showAllHosts: true,
   });
+
+  eleventyConfig.addFilter('isoDate', (dateObj) => {
+    return dateObj.toISOString().split('T')[0];
+  });
 }
