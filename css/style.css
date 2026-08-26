@@ -150,6 +150,22 @@ strong {
   min-width: 28ch;
 }
 
+.home-container {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+@media (min-width: 800px) {
+  .home-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
 .icon-medium {
   vertical-align: middle;
   width: 3rem;
@@ -175,6 +191,21 @@ strong {
   list-style-type: none;
 }
 
+.reading-list-link {
+  margin-block-start: 2rem;
+}
+
+.self-portrait {
+  flex-shrink: 0;
+  min-width: 15rem;
+  width: 15rem;
+}
+
+.self-portrait img {
+  border-radius: 0%;
+  width: 100%;
+}
+
 .social-links {
   display: flex;
   gap: 1rem;
@@ -186,22 +217,6 @@ strong {
 
 #base-footer {
   padding: 2rem 0 1rem;
-}
-
-#home-container {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 1rem 2rem;
-}
-
-@media (min-width: 800px) {
-  #home-container {
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
 }
 
 #main-nav {
@@ -258,17 +273,6 @@ strong {
     align-items: flex-end;
     max-width: 20rem;
   }
-}
-
-#self-portrait {
-  flex-shrink: 0;
-  min-width: 15rem;
-  width: 15rem;
-}
-
-#self-portrait img {
-  border-radius: 0%;
-  width: 100%;
 }
 
 #site-id {

@@ -15,7 +15,7 @@ layout: layouts/base.njk
         </li>
       {% endfor %}
     </ul>
-    <p>
+    <p class="reading-list-link">
       {% set readingList = collections.reading[0] %}
       <a class="link-with-icon" href="{{ readingList.url }}">
         {{ readingList.data.title }}
