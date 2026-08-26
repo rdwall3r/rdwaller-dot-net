@@ -100,7 +100,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.62rem;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 @media (min-width: 800px) {
@@ -135,12 +135,12 @@ strong {
 /* Classes */
 
 .article-container {
-  align-items: center;
+  /* align-items: center; */
   display: flex;
   flex: 1;
   flex-direction: column;
   margin-top: 1rem;
-  padding: 1rem 2rem;
+  /* padding: 1rem; */
 }
 
 .content-section {
