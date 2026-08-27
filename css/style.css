@@ -69,7 +69,9 @@ a:active {
 }
 
 blockquote {
-  margin: 0 2em;
+  border-inline-start: 0.5rem solid var(--color-clay);
+  margin: 2rem;
+  padding-inline-start: 1rem;
 }
 
 body {
