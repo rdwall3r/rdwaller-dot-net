@@ -99,6 +99,7 @@ figcaption {
 
 h1 {
   font-size: 1.62rem;
+  font-weight: var(--weight-bold);
   margin-top: 1.62rem;
 }
 
@@ -156,17 +157,15 @@ strong {
 /* Classes */
 
 .article-container {
-  /* align-items: center; */
   display: flex;
   flex: 1;
   flex-direction: column;
   margin-top: 1rem;
-  /* padding: 1rem; */
 }
 
 .content-section {
-  max-width: 65ch;
-  min-width: 28ch;
+  max-width: 67ch;
+  min-width: 25ch;
 }
 
 .heading-description {
@@ -193,9 +192,14 @@ strong {
   }
 }
 
-.icon-medium {
+.icon-large {
   vertical-align: middle;
   width: 3rem;
+}
+
+.icon-medium {
+  vertical-align: middle;
+  width: 2rem;
 }
 
 .icon-small {
@@ -227,7 +231,9 @@ strong {
 }
 
 .reading-list-link {
-  margin-block-start: 2rem;
+  display: flex;
+  font-weight: var(--weight-semibold);
+  gap: 0.5rem;
 }
 
 .self-portrait {

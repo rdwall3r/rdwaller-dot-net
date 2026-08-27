@@ -18,8 +18,7 @@ without compromising the use of the plain languages.
 
 ## About my use of AI for this site
 
-While I understand that vibe-coding now has an established role in development, I prefer to keep
-this personal space of mine largely free of AI-generated code. The same goes for content. I do use
-AI to handle repetitive and tedious tasks, and for research, suggestions, and rubber-ducking. To
-ignore these capacities would be to ignore a wealth of opportunities for learning and
-idea-generation.
+While I understand that vibe-coding has an established role in development, I prefer to keep this
+personal space of mine largely free of AI-generated code. The same goes for content. I do use AI to
+handle repetitive and tedious tasks, and for research, suggestions, and rubber-ducking. To ignore
+these capacities would be to ignore a wealth of opportunities for learning and idea-generation.

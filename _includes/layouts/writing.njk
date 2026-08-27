@@ -17,13 +17,13 @@ layout: layouts/base.njk
     </ul>
     <p class="reading-list-link">
       {% set readingList = collections.reading[0] %}
+      <img
+        alt=""
+        class="icon-small"
+        src="/assets/icons/heroicons/book-open-solid.svg"
+      />
       <a class="link-with-icon" href="{{ readingList.url }}">
         {{ readingList.data.title }}
-        <img
-          alt=""
-          class="icon-small"
-          src="/assets/icons/heroicons/book-open-solid.svg"
-        />
       </a>
     </p>
   </div>

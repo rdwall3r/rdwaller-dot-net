@@ -1,7 +1,7 @@
 ---
 returnDestination: Writing
 showDate: false
-title: My reading list
+title: My Reading List
 ---
 
 <ul class="reading-list">
