@@ -9,7 +9,7 @@ layout: layouts/base.njk
         {% for project in collections.projects | reverse %}
           <li>
               <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
-              <p>{{ project.data.subtitle }}</p>
+              <p role="doc-subtitle">{{ project.data.subtitle }}</p>
           </li>
         {% endfor %}
       </ul>

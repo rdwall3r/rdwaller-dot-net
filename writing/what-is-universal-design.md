@@ -21,10 +21,10 @@ university, founded the Center for Accessible Housing. It eventually became the
 Design</a>. Here, the seven Principles of Universal Design were created. Version 2, published in
 April of 1997, remains the current version.
 
-The seven principles may serve to inform designers and the public at large about what makes things
-more usable. The core principles are:
+The seven principles serve to inform designers and the public at large about what makes things more
+usable. The core principles are:
 
-<ol>
+<ol class="principles-list">
   <li>Equitable Use</li>
   <li>Flexibility in Use</li>
   <li>Simple and Intuitive Use</li>
