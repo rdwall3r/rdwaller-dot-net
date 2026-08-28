@@ -51,6 +51,7 @@ p {
 }
 
 ul {
+  list-style-type: none;
   margin: 1.62rem 0;
   padding: 0;
 }
@@ -258,11 +259,6 @@ tfoot {
   margin-inline-start: 2rem;
 }
 
-.project-list,
-.reading-list {
-  list-style-type: none;
-}
-
 .reading-list li {
   margin-block: 1.62rem;
 }
@@ -288,12 +284,15 @@ tfoot {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  list-style: none;
+}
+
+.table-non-cell {
+  border: none;
 }
 
 .table-not-applicable {
   background-color: var(--color-gainsboro);
-  color: color-mix(in srgb, var(--color-black) 70%, transparent);
+  color: color-mix(in srgb, var(--color-black) 67%, transparent);
 }
 
 .table-wrapper {
@@ -351,7 +350,6 @@ tfoot {
   flex: 1;
   font-weight: var(--weight-regular);
   justify-content: space-between;
-  list-style: none;
   min-width: 18rem;
 }
 
