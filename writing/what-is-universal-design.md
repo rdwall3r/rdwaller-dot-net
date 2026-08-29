@@ -125,7 +125,7 @@ include "Barrier-free Design", "Design for All", "Inclusive Design", and "Human-
 ## Sources
 
 <ul>
-  <li><a href="https://design.ncsu.edu/research/center-for-universal-design/">The Center for Universal Design</a>
-  <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a>
-  <li><a href="https://social.desa.un.org/issues/disability/crpd/convention-on-the-rights-of-persons-with-disabilities-articles">The United Nations' Convention on the Rights of Persons with Disabilities</a>
+  <li><a href="https://design.ncsu.edu/research/center-for-universal-design/">The Center for Universal Design</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
+  <li><a href="https://social.desa.un.org/issues/disability/crpd/convention-on-the-rights-of-persons-with-disabilities-articles">The United Nations' Convention on the Rights of Persons with Disabilities</a></li>
 </ul>

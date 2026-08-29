@@ -350,6 +350,7 @@ tfoot {
   flex: 1;
   font-weight: var(--weight-regular);
   justify-content: space-between;
+  margin: 0;
   min-width: 18rem;
 }
 
