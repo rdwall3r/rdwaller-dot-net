@@ -56,6 +56,10 @@ ul {
   padding: 0;
 }
 
+ul li, ol li {
+  margin-bottom: 0.62rem;
+}
+
 /* Elements */
 
 /* Order is LVHA (link, visited, hover, active) — required for :hover/:active to correctly override :link/:visited */
@@ -145,6 +149,10 @@ html {
   background-color: var(--color-sage);
   font-size: 112.5%;
   scrollbar-gutter: stable;
+}
+
+li h2 {
+  margin-bottom: 0.62rem;
 }
 
 main {
@@ -247,12 +255,6 @@ tfoot {
 
 .main-image {
   width: 20rem;
-}
-
-.post-list li {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
 }
 
 .principles-list {
