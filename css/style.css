@@ -261,10 +261,6 @@ tfoot {
   margin-inline-start: 2rem;
 }
 
-.reading-list li {
-  margin-block: 1.62rem;
-}
-
 .reading-list-link {
   display: flex;
   font-weight: var(--weight-semibold);
@@ -286,6 +282,7 @@ tfoot {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin: 0;
 }
 
 .table-non-cell {
