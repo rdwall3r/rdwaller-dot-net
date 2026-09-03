@@ -257,6 +257,11 @@ tfoot {
   width: 20rem;
 }
 
+.post-list li {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .principles-list {
   margin-inline-start: 2rem;
 }
