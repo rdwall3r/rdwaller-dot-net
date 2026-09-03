@@ -1,6 +1,6 @@
 export default function (eleventyConfig) {
-  eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return new Intl.DateTimeFormat('en-US', {
+  eleventyConfig.addFilter('readableDate', (dateObj, lang = 'en') => {
+    return new Intl.DateTimeFormat(lang, {
       year: 'numeric',
       month: 'long',
       day: 'numeric',

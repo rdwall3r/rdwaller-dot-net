@@ -1,1 +1,1 @@
-Do not make changes without asking me for permission.
+Do not make changes without asking me for permission. By default, this means instruct, don't edit — describe the exact changes (files, code snippets, commands) so I can apply them myself, rather than using file-editing tools. Only edit files directly when I explicitly say to (e.g. "go ahead," "make the change," "just do it").
