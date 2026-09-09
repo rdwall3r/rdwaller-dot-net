@@ -148,7 +148,6 @@ header {
 html {
   background-color: var(--color-sage);
   font-size: 112.5%;
-  scrollbar-gutter: stable;
 }
 
 li h2 {
