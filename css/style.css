@@ -256,9 +256,13 @@ tfoot {
   width: 20rem;
 }
 
+.post-date {
+  font-size: var(--font-size-small);
+}
+
 .post-list li {
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
 }
 
 .principles-list {
