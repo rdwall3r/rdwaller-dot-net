@@ -1,8 +1,9 @@
 ---
+date: 2026-09-10
 returnDestination: Projects
 title: Axe Ally
 showDate: false
-description: AI-augmented Axe-core accessibility auditing
+description: AI-augmented Axe-core accessibility auditing.
 ---
 
 # Axe Ally

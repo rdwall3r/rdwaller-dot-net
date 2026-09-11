@@ -1,6 +1,6 @@
 ---
 lastEdited: null
-publishedDate: 2026-08-30
+date: 2026-08-30
 title: What is Universal Design?
 returnDestination: Writing
 showDate: true

@@ -1,4 +1,5 @@
 ---
+date: 2026-08-30
 returnDestination: Projects
 title: My personal site (this one)
 showDate: false
