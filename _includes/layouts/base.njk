@@ -12,6 +12,9 @@
     <script src="/js/nav.js" defer></script>
   </head>
   <body>
+    <div id="skip">
+      <a href="#main-content">Skip to main content</a>
+    </div>
     <header>
       <div id="site-id-container">
           <div id="site-id"><a href="/">Ryan Waller</a></div>
@@ -26,7 +29,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="main-content">
       {{ content | safe }}
     </main>
     <footer id="base-footer">
