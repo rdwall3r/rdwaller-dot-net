@@ -48,17 +48,17 @@ ol {
 }
 
 p {
-  margin-top: 1.24rem;
+  margin-top: 1.25rem;
 }
 
 ul {
   list-style-type: none;
-  margin: 1.62rem 0;
+  margin: 0;
   padding: 0;
 }
 
 ul li, ol li {
-  margin-bottom: 0.62rem;
+  margin-bottom: 0.67rem;
 }
 
 /* Elements */
@@ -100,7 +100,7 @@ body {
   flex-direction: column;
   font-family: system-ui, sans-serif;
   font-weight: var(--weight-regular);
-  line-height: 1.62;
+  line-height: 1.67;
   margin: 0 auto;
   max-width: 67rem;
   min-height: 100vh;
@@ -127,20 +127,20 @@ figcaption {
 h1 {
   font-size: var(--font-size-large);
   font-weight: var(--weight-bold);
-  margin-top: 1.62rem;
+  margin-top: 1.67rem;
 }
 
 h2 {
   font-size: var(--font-size-semilarge);
   font-weight: var(--weight-semibold);
-  margin-top: 1.62rem;
+  margin-top: 1.67rem;
 }
 
 header {
   border-bottom: 1px solid;
   display: flex;
   flex-direction: column;
-  gap: 1.62rem;
+  gap: 1.5rem;
   padding: 1rem 0;
 }
 
@@ -158,7 +158,7 @@ html {
 }
 
 li h2 {
-  margin-bottom: 0.62rem;
+  margin-bottom: 0.67rem;
 }
 
 main {
@@ -358,6 +358,10 @@ tfoot {
 #main-nav a[aria-current='page'] {
   font-weight: var(--weight-bold);
   text-decoration: underline;
+}
+
+#main-nav li {
+  margin: 0;
 }
 
 #main-nav ul {
