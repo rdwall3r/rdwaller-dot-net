@@ -1,6 +1,9 @@
 :root {
   --color-black: black;
 
+  /* Reds */
+  --color-burgundy: #5D1818;
+
   /* Blue-greens */
   --color-sage: #c5d5c5;
   --color-spruce: #385d51;
@@ -152,7 +155,7 @@ header {
 }
 
 html {
-  background-color: var(--color-sage);
+  background-color: var(--color-burgundy);
   font-size: 112.5%;
 }
 
