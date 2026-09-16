@@ -1,9 +1,6 @@
 :root {
   --color-black: black;
 
-  /* Reds */
-  --color-burgundy: #5D1818;
-
   /* Blue-greens */
   --color-sage: #c5d5c5;
   --color-spruce: #385d51;
@@ -23,6 +20,7 @@
 
   /* Warm neutrals */
   --color-khaki: #e3e0cc;
+  --color-walnut: #3f301d;
 
   /* Font sizes */
   --font-size-large: 1.62rem;
@@ -155,7 +153,7 @@ header {
 }
 
 html {
-  background-color: var(--color-burgundy);
+  background-color: var(--color-walnut);
   font-size: 112.5%;
 }
 
