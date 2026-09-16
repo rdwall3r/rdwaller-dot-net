@@ -20,7 +20,7 @@
 
   /* Warm neutrals */
   --color-khaki: #e3e0cc;
-  --color-walnut: #3f301d;
+  --color-dark-walnut: #382b22;
 
   /* Font sizes */
   --font-size-large: 1.62rem;
@@ -153,7 +153,7 @@ header {
 }
 
 html {
-  background-color: var(--color-walnut);
+  background-color: var(--color-dark-walnut);
   font-size: 112.5%;
 }
 
