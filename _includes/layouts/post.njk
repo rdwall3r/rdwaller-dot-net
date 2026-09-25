@@ -8,7 +8,7 @@ layout: layouts/base.njk
       <a href="../../{{ returnDestination | lower }}">Back to {{ returnDestination }}</a>
     </p>
     {% if showDate %}
-      <p>{{ publishedDate | readableDate(lang) }}</p>
+      <p>{{ date | readableDate(lang) }}</p>
     {% endif %}
     {{ content | safe }}
     {% if lastEdited %}
