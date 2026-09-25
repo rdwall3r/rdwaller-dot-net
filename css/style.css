@@ -8,6 +8,9 @@
   /* Blues */
   --color-cobalt: #1d5fd6;
 
+  /* Reds */
+  --color-maroon: #800000;
+
   /* Near-whites */
   --color-gainsboro: #dcdcdc;
   --color-pearl: #eaece5;
@@ -81,7 +84,7 @@ a:active {
 }
 
 blockquote {
-  border-inline-start: 0.5rem solid var(--color-clay);
+  border-inline-start: 0.5rem solid var(--color-sage);
   margin: 1rem 0;
   padding-inline-start: 1rem;
 }
