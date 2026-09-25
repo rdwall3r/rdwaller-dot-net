@@ -19,8 +19,8 @@
   --color-clay: #a96e5b;
 
   /* Warm neutrals */
-  --color-khaki: #e3e0cc;
   --color-dark-walnut: #382b22;
+  --color-khaki: #e3e0cc;
 
   /* Font sizes */
   --font-size-large: 1.62rem;
@@ -114,9 +114,10 @@ body {
 }
 
 caption {
-  font-weight: var(--weight-semibold);
-  margin-bottom: 0.5rem;
-  text-align: left;
+  caption-side: bottom;
+  font-style: italic;
+  margin-top: 0.25rem;
+  text-align: right;
 }
 
 figcaption {
@@ -335,9 +336,9 @@ tfoot {
 }
 
 #main-nav a {
+  color: var(--color-black);
   display: grid;
   text-decoration: none;
-  color: var(--color-black);
 }
 
 #main-nav a span {
@@ -397,16 +398,16 @@ tfoot {
 }
 
 #skip a {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
 }
- 
+
 #skip a:focus {
-  position:static;
-  width:auto;
-  height:auto;
+  height: auto;
+  position: static;
+  width: auto;
 }
