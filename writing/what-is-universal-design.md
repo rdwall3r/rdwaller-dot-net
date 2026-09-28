@@ -1,7 +1,7 @@
 ---
 lastEdited: null
 date: 2026-08-30
-title: What is Universal Design?
+title: "What is Universal Design?"
 returnDestination: Writing
 showDate: true
 ---
