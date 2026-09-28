@@ -51,7 +51,7 @@ ol, ul, dl {
 }
 
 p {
-  margin-top: 1.25rem;
+  margin-top: 0.75rem;
 }
 
 ul {
@@ -132,13 +132,15 @@ figcaption {
 h1 {
   font-size: var(--font-size-large);
   font-weight: var(--weight-bold);
-  margin-top: 1.67rem;
 }
 
 h2 {
   font-size: var(--font-size-semilarge);
   font-weight: var(--weight-semibold);
-  margin-top: 1.67rem;
+}
+
+h1,h2 {
+  margin: 1.5rem 0 0.75rem;
 }
 
 header {
@@ -160,10 +162,6 @@ header {
 html {
   background-color: var(--color-dark-walnut);
   font-size: 112.5%;
-}
-
-li h2 {
-  margin-bottom: 0.67rem;
 }
 
 main {
@@ -281,6 +279,10 @@ tfoot {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+}
+
+.project-list h2 {
+  margin-bottom: 0.25rem;
 }
 
 .reading-list-link {
