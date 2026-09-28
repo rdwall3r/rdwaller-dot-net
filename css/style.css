@@ -164,10 +164,6 @@ html {
   font-size: 112.5%;
 }
 
-li h2 {
-  margin-bottom: 0.67rem;
-}
-
 main {
   display: flex;
   flex: 1;
