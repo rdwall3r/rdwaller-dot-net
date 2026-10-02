@@ -228,6 +228,7 @@ tfoot {
 
 .bulleted-desc-list dt {
   display: list-item;
+  font-weight: var(--weight-semibold);
   list-style-type: disc;
 }
 

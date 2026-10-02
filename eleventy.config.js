@@ -14,6 +14,8 @@ export default function (eleventyConfig) {
     js: 'js',
   });
 
+  eleventyConfig.ignores.add('.claude/**');
+
   eleventyConfig.setServerOptions({
     showAllHosts: true,
   });

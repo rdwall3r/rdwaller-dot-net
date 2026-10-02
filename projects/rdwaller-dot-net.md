@@ -6,8 +6,6 @@ showDate: false
 description: Uses plain HTML/CSS/JS and Eleventy templating.
 ---
 
-# My personal site (this one)
-
 I created this site in August of 2026. I wanted a published place where I could practice and
 demonstrate skills related to development and universal design. It is my hope that this project will
 remain a work in progress throughout my career.
