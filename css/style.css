@@ -25,6 +25,10 @@
   --color-dark-walnut: #382b22;
   --color-khaki: #e3e0cc;
 
+  /* Font families */
+  --font-body: system-ui, sans-serif;
+  --font-heading: Georgia, serif;
+
   /* Font sizes */
   --font-size-large: 1.62rem;
   --font-size-regular: 1rem;
@@ -32,9 +36,9 @@
   --font-size-small: 0.81rem;
 
   /* Font weights */
-  --weight-bold: 625;
-  --weight-regular: 225;
-  --weight-semibold: 425;
+  --weight-bold: 700;
+  --weight-regular: 400;
+  --weight-semibold: 550;
 }
 
 /* Reset */
@@ -102,7 +106,7 @@ body {
   border-inline: 1px solid #eaece5;
   display: flex;
   flex-direction: column;
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-body);
   font-weight: var(--weight-regular);
   line-height: 1.67;
   margin: 0 auto;
@@ -136,11 +140,15 @@ h1 {
 
 h2 {
   font-size: var(--font-size-semilarge);
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-bold);
 }
 
 h1,h2 {
   margin: 1.5rem 0 0.75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
 }
 
 header {
@@ -389,6 +397,7 @@ tfoot {
 }
 
 #site-id {
+  font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: var(--weight-bold);
 }
