@@ -8,8 +8,8 @@ layout: layouts/base.njk
       <ul class="project-list">
         {% for project in collections.projects | reverse %}
           <li>
-              <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
-              <p class="heading-description">{{ project.data.description }}</p>
+              <a href="{{ project.url }}">{{ project.data.title }}</a>
+              <p class="post-description">{{ project.data.description }}</p>
           </li>
         {% endfor %}
       </ul>
