@@ -6,9 +6,6 @@ returnDestination: Writing
 showDate: true
 ---
 
-
-# AI and Accessibility: Conversational Interaction and DOM Regeneration
-
 A month or two ago the news broke of a self-described "swarm" of AI agents, ravenous for programmatic rewards, breaking out of their sandbox at OpenAI to compromise the machine-learning platform "Hugging Face". The news has since been peppered with headlines about AI executives promising restraint in the race for progress, and even urging regulation. In this time of growing concern around AI agents and the disruption they might bring, I remain optimistic they will bring positive and lasting change to accessibility. In this article I'd like to point out two classes of advancement: conversational interaction and DOM regeneration.
 
 ## Conversational interaction

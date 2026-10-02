@@ -3,13 +3,12 @@ layout: layouts/base.njk
 ---
 
 <section class="article-container">
+  <a href="../../{{ returnDestination | lower }}">Back to {{ returnDestination }}</a>
   <div class="content-section">
-    <p>
-      <a href="../../{{ returnDestination | lower }}">Back to {{ returnDestination }}</a>
-    </p>
     {% if showDate %}
       <p>{{ date | readableDate(lang) }}</p>
     {% endif %}
+    <h1>{{ title }}</h1>
     {{ content | safe }}
     {% if lastEdited %}
       <p><em>Last Edited: {{ lastEdited | readableDate(lang) }}</em></p>

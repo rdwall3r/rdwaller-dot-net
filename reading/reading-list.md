@@ -6,9 +6,6 @@ title: My Reading List
 
 <ul class="reading-list">
   <li>
-    <h1>My Reading List</h1>
-  </li>
-  <li>
     <h2><a href="https://a.co/d/0fLtT1P3"><cite>Don't Make Me Think</cite></a>, by Steve Krug (2013)</h2>
     A witty foundational book on web usability explained using straightforward and often comedic
     language. Some of the screenshots are looking ancient by now but they are no less applicable

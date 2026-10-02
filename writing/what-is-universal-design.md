@@ -6,8 +6,6 @@ returnDestination: Writing
 showDate: true
 ---
 
-# What is Universal Design?
-
 <blockquote>
   <p>The design of products and environments to be usable by all people, to the greatest extent
 possible, without the need for specialized design.</p>
