@@ -1,7 +1,7 @@
 ---
 lastEdited: null
 date: 2026-08-30
-title: "What is Universal Design?"
+title: 'What is Universal Design?'
 returnDestination: Writing
 showDate: true
 ---
@@ -15,22 +15,20 @@ possible, without the need for specialized design.</p>
 The concept of Universal Design as we know it today has its roots at North Carolina State
 University.\* In 1989, Ronald L. Mace, an accessibility activist, architect, and alumnus of the
 university, founded the Center for Accessible Housing. It eventually became the
-<a href="https://design.ncsu.edu/research/center-for-universal-design/">Center for Universal
-Design</a>. Here, the seven Principles of Universal Design were created. Version 2, published in
-April of 1997, remains the current version.
+[Center for Universal Design](https://design.ncsu.edu/research/center-for-universal-design/). Here,
+the seven Principles of Universal Design were created. Version 2, published in April of 1997,
+remains the current version.
 
 The seven principles help designers and the public at large better understand what makes things more
 usable. The core principles are:
 
-<ol class="principles-list">
-  <li>Equitable Use</li>
-  <li>Flexibility in Use</li>
-  <li>Simple and Intuitive Use</li>
-  <li>Perceptible Information</li>
-  <li>Tolerance for Error</li>
-  <li>Low Physical Effort</li>
-  <li>Size and Space for Approach and Use</li>
-</ol>
+1. Equitable Use
+2. Flexibility in Use
+3. Simple and Intuitive Use
+4. Perceptible Information
+5. Tolerance for Error
+6. Low Physical Effort
+7. Size and Space for Approach and Use
 
 These principles have remained unchanged for nearly thirty years. Their resilience is a testament to
 their fundamental and comprehensive nature. Also impressive is their transferability, as they were
@@ -61,7 +59,7 @@ WCAG 2.0 "POUR" principles (2008):
       <tr>
         <th scope="row">Flexibility in Use</th>
         <td></td>
-        <td>●</td>   
+        <td>●</td>
         <td></td>
         <td class="table-not-applicable"></td>
       </tr>
@@ -122,8 +120,6 @@ include "Barrier-free Design", "Design for All", "Inclusive Design", and "Human-
 
 ## Sources
 
-<ul>
-  <li><a href="https://design.ncsu.edu/research/center-for-universal-design/">The Center for Universal Design</a></li>
-  <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</a></li>
-  <li><a href="https://social.desa.un.org/issues/disability/crpd/convention-on-the-rights-of-persons-with-disabilities-articles">The United Nations' Convention on the Rights of Persons with Disabilities</a></li>
-</ul>
+- [The Center for Universal Design](https://design.ncsu.edu/research/center-for-universal-design/)
+- [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
+- [The United Nations' Convention on the Rights of Persons with Disabilities](https://social.desa.un.org/issues/disability/crpd/convention-on-the-rights-of-persons-with-disabilities-articles)

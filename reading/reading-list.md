@@ -12,7 +12,8 @@ title: My Reading List
     to user experience.
   </li>
   <li>
-    <h2><a href="https://a.co/d/0fFfqDIM"><cite>The Design of Everyday Things</cite></a>, by Don Norman (2013)</h2>
+    <h2><a href="https://a.co/d/0fFfqDIM"><cite>The Design of Everyday Things</cite></a>
+    , by Don Norman (2013)</h2>
     A classic of usability design. This book genuinely increased my design awareness. Since
     reading it I find myself considering the usability of myriad things from silverware to software.
   </li>
@@ -22,7 +23,8 @@ title: My Reading List
     management of their worth, how to maintain them, and more.
   </li>
   <li>
-    <h2><a href="https://a.co/d/0dTVpE2K"><cite>Universal Principles of Design</cite></a>, by William Lidwell et al. (2023)</h2>
+    <h2><a href="https://a.co/d/0dTVpE2K"><cite>Universal Principles of Design</cite></a>
+    , by William Lidwell et al. (2023)</h2>
     An encyclopedia of 200 fundamental design principles with the principles sorted alphabetically.
     An excellent desk reference or coffee table companion.
   </li>
