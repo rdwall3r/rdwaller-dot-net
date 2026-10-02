@@ -236,10 +236,6 @@ tfoot {
   min-width: 25ch;
 }
 
-.heading-description {
-  margin: 0;
-}
-
 .home-container {
   align-items: center;
   display: flex;
@@ -279,18 +275,15 @@ tfoot {
   width: 20rem;
 }
 
-.post-date {
+.post-description {
   font-size: var(--font-size-small);
+  margin: 0;
 }
 
 .post-list li {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-}
-
-.project-list h2 {
-  margin-bottom: 0.25rem;
 }
 
 .reading-list-link {
