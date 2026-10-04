@@ -26,7 +26,7 @@
   --color-khaki: #e3e0cc;
 
   /* Font families */
-  --font-body: system-ui, sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next', sans-serif;
   --font-heading: Georgia, serif;
 
   /* Font sizes */
@@ -179,7 +179,7 @@ header {
 
 html {
   background-color: var(--color-dark-walnut);
-  font-size: 112.5%;
+  font-size: 118.75%;
 }
 
 main {
