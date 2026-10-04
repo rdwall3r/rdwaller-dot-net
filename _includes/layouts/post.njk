@@ -3,8 +3,8 @@ layout: layouts/base.njk
 ---
 
 <section class="article-container">
-  <a href="../../{{ returnDestination | lower }}">Back to {{ returnDestination }}</a>
-  <div class="content-section">
+  <p><a href="../../{{ returnDestination | lower }}">Back to {{ returnDestination }}</a></p>  
+  <div class="prose">
     {% if showDate %}
       <p>{{ date | readableDate(lang) }}</p>
     {% endif %}
