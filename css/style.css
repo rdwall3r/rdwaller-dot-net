@@ -391,7 +391,6 @@ tfoot {
   flex: 1;
   justify-content: space-between;
   margin: 0;
-  min-width: 18rem;
 }
 
 @media (min-width: 800px) {
