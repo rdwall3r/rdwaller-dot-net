@@ -49,7 +49,9 @@
   box-sizing: border-box;
 }
 
-ol, ul, dl {
+ol,
+ul,
+dl {
   margin: 0 2rem;
   padding: 0;
 }
@@ -64,7 +66,9 @@ ul {
   padding: 0;
 }
 
-ul li, ol li, dl dd {
+ul li,
+ol li,
+dl dd {
   margin: 0;
   margin-bottom: 1rem;
 }
@@ -143,11 +147,17 @@ h2 {
   font-weight: var(--weight-bold);
 }
 
-h1,h2 {
+h1,
+h2 {
   margin: 1.5rem 0 0.75rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 
@@ -242,7 +252,7 @@ tfoot {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 1rem
+  padding: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -305,6 +315,7 @@ tfoot {
 }
 
 .social-links {
+  align-items: center;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -327,7 +338,7 @@ tfoot {
 /* IDs */
 
 #base-footer {
-  padding: 3rem 0 1rem;
+  padding-top: 3rem;
 }
 
 #main-nav {
