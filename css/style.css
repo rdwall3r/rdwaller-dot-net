@@ -373,7 +373,7 @@ tfoot {
   visibility: hidden;
 }
 
-#main-nav a:not([aria-disabled='true']):not([aria-current='page']):hover {
+#main-nav a:not([aria-disabled='true']):not([aria-current='page']):is(:hover, :focus-visible) {
   font-weight: var(--weight-semibold);
 }
 
