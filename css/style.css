@@ -165,7 +165,7 @@ header {
   border-bottom: 1px solid;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
   margin-bottom: 1.5rem;
   padding: 0.6rem 0;
 }
