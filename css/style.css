@@ -408,6 +408,7 @@ tfoot {
 }
 
 #site-id-container {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   line-height: 1.33;
@@ -417,6 +418,10 @@ tfoot {
   color: var(--color-black);
   display: block;
   text-decoration: none;
+}
+
+#site-id-container a:hover {
+  text-decoration: underline;
 }
 
 #skip a {
