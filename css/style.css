@@ -323,6 +323,10 @@ tfoot {
   margin: 0;
 }
 
+.social-links a:is(:hover, :focus-visible) img {
+  transform: scale(1.1);
+}
+
 .table-non-cell {
   border: none;
 }
