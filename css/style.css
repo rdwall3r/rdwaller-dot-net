@@ -13,7 +13,7 @@
 
   /* Near-whites */
   --color-gainsboro: #dcdcdc;
-  --color-pearl: #eaece5;
+  --color-vellum: #f6eee3;
 
   /* Purples */
   --color-amethyst: #7a3fb0;
@@ -106,7 +106,7 @@ blockquote {
 }
 
 body {
-  background-color: var(--color-pearl);
+  background-color: var(--color-vellum);
   border-inline: 1px solid #eaece5;
   display: flex;
   flex-direction: column;
