@@ -7,6 +7,7 @@
 
   /* Blues */
   --color-cobalt: #1d5fd6;
+  --color-ink-blue: #1b3a8c;
 
   /* Reds */
   --color-maroon: #800000;
@@ -17,6 +18,7 @@
 
   /* Purples */
   --color-amethyst: #7a3fb0;
+  --color-plum: #5e2d91;
 
   /* Warm mid-tones */
   --color-clay: #a96e5b;
@@ -77,11 +79,11 @@ dl dd {
 
 /* Order is LVHA (link, visited, hover, active) — required for :hover/:active to correctly override :link/:visited */
 a:link {
-  color: var(--color-cobalt);
+  color: var(--color-ink-blue);
 }
 
 a:visited {
-  color: var(--color-amethyst);
+  color: var(--color-plum);
 }
 
 a:hover {
