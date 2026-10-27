@@ -1,13 +1,13 @@
 ---
 lastEdited: null
 date: 2026-10-27
-title: 'Atkinson Hyperlegible Fonts: Trailblazing a Sensible Path'
+title: 'Atkinson Hyperlegible Fonts: Trailblazing a Clear and Sensible Path'
 returnDestination: Writing
 showDate: true
 ---
 
 <blockquote>
-  <p>"Atkinson Hyperlegible may prove to only the first of its kind in a newly imagined
+  <p>"Atkinson Hyperlegible may prove to [be] only the first of its kind in a newly imagined
   category of hyperlegible typefaces."</p>
   <footer>-- <cite>Applied Design Works</cite></footer>
 </blockquote>
