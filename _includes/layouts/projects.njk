@@ -5,7 +5,7 @@ layout: layouts/base.njk
 <section class="article-container">
   <div class="prose">
     <h1>Projects</h1>
-      <ul class="project-list">
+      <ul>
         {% for project in collections.projects | reverse %}
           <li>
               <a href="{{ project.url }}">{{ project.data.title }}</a>

@@ -241,6 +241,16 @@ tfoot {
   margin-top: 0;
 }
 
+.bulleted-list {
+  list-style-type: disc;
+  margin: 0 2rem;
+  padding: 0;
+}
+
+.bulleted-list li {
+  margin-bottom: 0.5rem;
+}
+
 .bulleted-desc-list dt {
   display: list-item;
   font-weight: var(--weight-semibold);
