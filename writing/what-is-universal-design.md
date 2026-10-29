@@ -38,9 +38,9 @@ conceived in the realm of architectural design and now are referenced from other
 digital accessibility. As an illustration, consider how the seven principles might map to the four
 WCAG 2.0 "POUR" principles (2008):
 
-<div class="table-wrapper">
+<div class="table-wrapper" role="region" aria-labelledby="ud-pour-caption" tabindex="0">
   <table>
-    <caption>Mapping the seven UD principles to the WCAG POUR principles</caption>
+    <caption id="ud-pour-caption">Mapping the seven UD principles to the WCAG POUR principles</caption>
     <thead>
       <tr>
         <td class="table-non-cell"></td>
@@ -53,52 +53,52 @@ WCAG 2.0 "POUR" principles (2008):
     <tbody>
       <tr>
         <th scope="row">Equitable Use</th>
-        <td>( ● )</td>
-        <td>( ● )</td>
-        <td>( ● )</td>
-        <td class="table-not-applicable">( ● )</td>
+        <td><span aria-hidden="true">( ● )</span><span class="visually-hidden">Yes, integral</span></td>
+        <td><span aria-hidden="true">( ● )</span><span class="visually-hidden">Yes, integral</span></td>
+        <td><span aria-hidden="true">( ● )</span><span class="visually-hidden">Yes, integral</span></td>
+        <td class="table-not-applicable"><span aria-hidden="true">( ● )</span><span class="visually-hidden">Yes, integral</span></td>
       </tr>
       <tr>
         <th scope="row">Flexibility in Use</th>
-        <td></td>
-        <td>●</td>
-        <td></td>
-        <td class="table-not-applicable"></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td><span aria-hidden="true">●</span><span class="visually-hidden">Yes</span></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td class="table-not-applicable">N/A</td>
       </tr>
       <tr>
         <th scope="row">Simple and Intuitive Use</th>
-        <td></td>
-        <td></td>
-        <td>●</td>
-        <td class="table-not-applicable"></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td><span aria-hidden="true">●</span><span class="visually-hidden">Yes</span></td>
+        <td class="table-not-applicable">N/A</td>
       </tr>
       <tr>
         <th scope="row">Perceptible Information</th>
-        <td>●</td>
-        <td></td>
-        <td></td>
-        <td class="table-not-applicable"></td>
+        <td><span aria-hidden="true">●</span><span class="visually-hidden">Yes</span></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td class="table-not-applicable">N/A</td>
       </tr>
       <tr>
         <th scope="row">Low Physical Effort</th>
-        <td></td>
-        <td>●</td>
-        <td></td>
-        <td class="table-not-applicable"></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td><span aria-hidden="true">●</span><span class="visually-hidden">Yes</span></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td class="table-not-applicable">N/A</td>
       </tr>
       <tr>
         <th scope="row">Tolerance for Error</th>
-        <td></td>
-        <td></td>
-        <td>●</td>
-        <td class="table-not-applicable"></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td><span class="visually-hidden">No</span></td>
+        <td><span aria-hidden="true">●</span><span class="visually-hidden">Yes</span></td>
+        <td class="table-not-applicable">N/A</td>
       </tr>
       <tr>
         <th class="table-not-applicable" scope="row">Size and Space for Approach and Use</th>
-        <td class="table-not-applicable"></td>
-        <td class="table-not-applicable"></td>
-        <td class="table-not-applicable"></td>
-        <td class="table-not-applicable"></td>
+        <td class="table-not-applicable">N/A</td>
+        <td class="table-not-applicable">N/A</td>
+        <td class="table-not-applicable">N/A</td>
+        <td class="table-not-applicable">N/A</td>
       </tr>
     </tbody>
   </table>
