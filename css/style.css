@@ -356,8 +356,25 @@ tfoot {
   color: color-mix(in srgb, var(--color-black) 67%, transparent);
 }
 
+/* position: relative keeps .visually-hidden cell text inside the scroller instead of widening the page */
 .table-wrapper {
   overflow-x: auto;
+  position: relative;
+}
+
+.table-wrapper:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 2px;
+}
+
+/* Hidden on screen but still read by screen readers */
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .table-wrapper:focus-visible {
