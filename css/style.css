@@ -94,14 +94,17 @@ a:active {
   color: var(--color-clay);
 }
 
-blockquote {
+/* A quote with an attribution is a figure; the bar wraps the quote and its figcaption together */
+blockquote,
+figure:has(> blockquote) {
   border-inline-start: 0.5rem solid var(--color-sage);
   margin: 1rem 0;
   padding-inline-start: 1rem;
 }
 
 @media (min-width: 800px) {
-  blockquote {
+  blockquote,
+  figure:has(> blockquote) {
     margin: 1.5rem;
     padding-inline-start: 1rem;
   }
@@ -134,9 +137,14 @@ caption {
   text-align: right;
 }
 
-figcaption {
-  display: flex;
-  justify-content: flex-end;
+figure {
+  margin: 0;
+}
+
+figure > blockquote {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {

@@ -6,11 +6,13 @@ returnDestination: Writing
 showDate: true
 ---
 
-<blockquote>
-  <p>"Atkinson Hyperlegible may prove to [be] only the first of its kind in a newly imagined
-  category of hyperlegible typefaces."</p>
-  <footer>-- <cite>Applied Design Works</cite></footer>
-</blockquote>
+<figure>
+  <blockquote>
+    <p>"Atkinson Hyperlegible may prove to [be] only the first of its kind in a newly imagined
+    category of hyperlegible typefaces."</p>
+  </blockquote>
+  <figcaption>— <cite>Applied Design Works</cite></figcaption>
+</figure>
 
 Earlier in the month I set out to find a main font for this site. I knew I wanted something easy on
 the eyes, and easier on the brain. I found my answer in

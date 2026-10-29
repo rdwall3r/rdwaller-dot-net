@@ -6,11 +6,13 @@ returnDestination: Writing
 showDate: true
 ---
 
-<blockquote>
-  <p>The design of products and environments to be usable by all people, to the greatest extent
-possible, without the need for specialized design.</p>
-  <footer>-- <cite>The Center for Universal Design</cite></footer>
-</blockquote>
+<figure>
+  <blockquote>
+    <p>The design of products and environments to be usable by all people, to the greatest extent
+    possible, without the need for specialized design.</p>
+  </blockquote>
+  <figcaption>— <cite>The Center for Universal Design</cite></figcaption>
+</figure>
 
 The concept of Universal Design as we know it today has its roots at North Carolina State
 University.\* In 1989, Ronald L. Mace, an accessibility activist, architect, and alumnus of the
