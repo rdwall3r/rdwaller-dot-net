@@ -24,7 +24,7 @@
   --color-clay: #a96e5b;
 
   /* Warm neutrals */
-  --color-dark-walnut: #31241a;
+  --color-walnut: #31241a;
   --color-khaki: #e3e0cc;
 
   /* Font families */
@@ -189,7 +189,7 @@ header {
 }
 
 html {
-  background-color: var(--color-dark-walnut);
+  background-color: var(--color-walnut);
   font-size: 118.75%;
 }
 
@@ -331,7 +331,8 @@ tfoot {
 }
 
 .self-portrait img {
-  border-radius: 0%;
+  border: 0.1rem solid color-mix(in srgb, var(--color-walnut) 50%, transparent);
+  border-radius: 2%;
   width: 100%;
 }
 
