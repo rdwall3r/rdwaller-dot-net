@@ -77,6 +77,10 @@ dl dd {
 
 /* Elements */
 
+a {
+  text-underline-offset: 0.23em;
+}
+
 /* Order is LVHA (link, visited, hover, active) — required for :hover/:active to correctly override :link/:visited */
 a:link {
   color: var(--color-ink-blue);
