@@ -343,7 +343,7 @@ tfoot {
 .social-links {
   align-items: center;
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   justify-content: center;
   margin: 0;
 }
