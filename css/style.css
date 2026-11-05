@@ -1,5 +1,9 @@
 :root {
+  /* Dark neutrals */
   --color-black: black;
+  --color-charcoal: #1e1e1e;
+  --color-ink-black: #0f1115;
+  --color-midnight: #121a2e;
 
   /* Blue-greens */
   --color-sage: #c5d5c5;
@@ -14,6 +18,7 @@
 
   /* Near-whites */
   --color-gainsboro: #dcdcdc;
+  --color-newsprint: #c8c4b8;
   --color-vellum: #f6eee3;
 
   /* Purples */
@@ -41,6 +46,19 @@
   --weight-bold: 700;
   --weight-regular: 400;
   --weight-semibold: 600;
+
+  /* Page Styling */
+  --container-color: var(--color-walnut);
+  --bg-color: var(--color-vellum);
+  --text-color: var(--color-ink-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --container-color: var(--color-midnight);
+    --bg-color: var(--color-ink-black);
+    --text-color: var(--color-newsprint);
+  }
 }
 
 /* Reset */
@@ -115,8 +133,9 @@ figure:has(> blockquote) {
 }
 
 body {
-  background-color: var(--color-vellum);
-  border-inline: 1px solid #eaece5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /* border-inline: 1px solid #eaece5; */
   display: flex;
   flex-direction: column;
   font-family: var(--font-body);
@@ -193,7 +212,7 @@ header {
 }
 
 html {
-  background-color: var(--color-walnut);
+  background-color: var(--container-color);
   font-size: 118.75%;
 }
 
@@ -225,14 +244,14 @@ th {
 
 th,
 td {
-  border: 1px solid var(--color-black);
+  border: 1px solid var(--text-color);
   padding: 0.5rem 1rem;
   text-align: center;
 }
 
 tfoot th,
 tfoot {
-  border-top: 2px solid var(--color-black);
+  border-top: 2px solid var(--text-color);
 }
 
 /* Attribute selectors */
@@ -335,7 +354,7 @@ tfoot {
 }
 
 .self-portrait img {
-  border: 0.1rem solid color-mix(in srgb, var(--color-walnut) 50%, transparent);
+  border: 0.1rem solid color-mix(in srgb, var(--container-color) 50%, transparent);
   border-radius: 2%;
   width: 100%;
 }
@@ -358,7 +377,7 @@ tfoot {
 
 .table-not-applicable {
   background-color: var(--color-gainsboro);
-  color: color-mix(in srgb, var(--color-black) 67%, transparent);
+  color: color-mix(in srgb, var(--text-color) 67%, transparent);
 }
 
 /* position: relative keeps .visually-hidden cell text inside the scroller instead of widening the page */
@@ -419,7 +438,7 @@ tfoot {
 }
 
 #main-nav a {
-  color: var(--color-black);
+  color: var(--text-color);
   display: grid;
   text-decoration: none;
 }
@@ -476,7 +495,7 @@ tfoot {
 }
 
 #site-id-container a {
-  color: var(--color-black);
+  color: var(--text-color);
   display: block;
   text-decoration: none;
 }
