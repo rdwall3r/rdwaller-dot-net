@@ -383,6 +383,18 @@ tfoot {
   transform: scale(1.1);
 }
 
+.reading-list-link img,
+.social-links img {
+  filter: invert(0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  .reading-list-link img,
+  .social-links img {
+    filter: invert(0.77);
+  }
+}
+
 .table-non-cell {
   border: none;
 }
@@ -431,7 +443,7 @@ tfoot {
 /* IDs */
 
 #base-footer {
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 
 #main-nav {
