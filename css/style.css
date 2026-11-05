@@ -7,10 +7,12 @@
 
   /* Blue-greens */
   --color-sage: #c5d5c5;
+  --color-seafoam: #6cc4b0;
   --color-spruce: #385d51;
 
   /* Blues */
   --color-cobalt: #1d5fd6;
+  --color-cornflower: #8fb0ff;
   --color-ink-blue: #1b3a8c;
 
   /* Reds */
@@ -23,9 +25,11 @@
 
   /* Purples */
   --color-amethyst: #7a3fb0;
+  --color-lilac: #d4a5d4;
   --color-plum: #8a4a8a;
 
   /* Warm mid-tones */
+  --color-apricot: #e0a48f;
   --color-clay: #a96e5b;
 
   /* Warm neutrals */
@@ -51,6 +55,10 @@
   --container-color: var(--color-walnut);
   --bg-color: var(--color-vellum);
   --text-color: var(--color-ink-black);
+  --link-color: var(--color-ink-blue);
+  --link-visited-color: var(--color-plum);
+  --link-hover-color: var(--color-spruce);
+  --link-active-color: var(--color-clay);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +66,10 @@
     --container-color: var(--color-midnight);
     --bg-color: var(--color-ink-black);
     --text-color: var(--color-newsprint);
+    --link-color: var(--color-cornflower);
+    --link-visited-color: var(--color-lilac);
+    --link-hover-color: var(--color-seafoam);
+    --link-active-color: var(--color-apricot);
   }
 }
 
@@ -101,19 +113,19 @@ a {
 
 /* Order is LVHA (link, visited, hover, active) — required for :hover/:active to correctly override :link/:visited */
 a:link {
-  color: var(--color-ink-blue);
+  color: var(--link-color);
 }
 
 a:visited {
-  color: var(--color-plum);
+  color: var(--link-visited-color);
 }
 
 a:hover {
-  color: var(--color-spruce);
+  color: var(--link-hover-color);
 }
 
 a:active {
-  color: var(--color-clay);
+  color: var(--link-active-color);
 }
 
 /* A quote with an attribution is a figure; the bar wraps the quote and its figcaption together */
