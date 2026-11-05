@@ -71,6 +71,10 @@
     --link-hover-color: var(--color-seafoam);
     --link-active-color: var(--color-apricot);
   }
+
+  img {
+    filter: brightness(0.85);
+  }
 }
 
 /* Reset */
