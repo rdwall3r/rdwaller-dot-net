@@ -41,13 +41,17 @@
   --font-heading: Georgia, serif;
 
   /* Font sizes */
-  --font-size-sm: 0.81rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.22rem;
-  --font-size-xl: 1.62rem;
+  --scale: 1.22; /* ratio between steps */
+  --font-size-md: 1.125rem;
+  --font-size-sm: calc(var(--font-size-md) / var(--scale)); /* ≈ 0.94rem */
+  --font-size-lg: calc(var(--font-size-md) * var(--scale)); /* ≈ 1.35rem */
+  --font-size-xl: calc(var(--font-size-lg) * var(--scale)); /* ≈ 1.62rem */
+  --font-size-2xl: calc(var(--font-size-xl) * var(--scale)); /* ≈ 1.94rem */
+  --font-size-3xl: calc(var(--font-size-2xl) * var(--scale)); /* ≈ 2.33rem */
 
   /* Font weights */
   --weight-bold: 700;
+  --weight-medium: 500;
   --weight-regular: 400;
   --weight-semibold: 600;
 
@@ -156,7 +160,7 @@ body {
   flex-direction: column;
   font-family: var(--font-body);
   font-weight: var(--weight-regular);
-  line-height: 1.67;
+  line-height: 1.6;
   margin: 0 auto;
   max-width: 67rem;
   min-height: 100vh;
@@ -188,17 +192,18 @@ figure > blockquote {
 
 h1 {
   font-size: var(--font-size-xl);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-medium);
 }
 
 h2 {
   font-size: var(--font-size-lg);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-medium);
 }
 
 h1,
 h2 {
   margin: 1.5rem 0 0.75rem;
+  line-height: 1.33;
 }
 
 h1,
@@ -255,7 +260,7 @@ table {
 }
 
 th {
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-medium);
 }
 
 th,
@@ -302,7 +307,7 @@ tfoot {
 
 .bulleted-desc-list dt {
   display: list-item;
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-medium);
   list-style-type: disc;
 }
 
@@ -358,7 +363,7 @@ tfoot {
 
 .reading-list-link {
   display: flex;
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-medium);
   gap: 0.5rem;
 }
 
@@ -477,17 +482,17 @@ tfoot {
 
 #main-nav a::before {
   content: attr(data-label);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semibold);
   grid-area: 1 / 1;
   visibility: hidden;
 }
 
 #main-nav a:not([aria-disabled='true']):not([aria-current='page']):is(:hover, :focus-visible) {
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-medium);
 }
 
 #main-nav a[aria-current='page'] {
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semibold);
   text-decoration: underline;
 }
 
@@ -512,7 +517,7 @@ tfoot {
 #site-id {
   font-family: var(--font-heading);
   font-size: 2rem;
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semibold);
 }
 
 #site-id-container {
