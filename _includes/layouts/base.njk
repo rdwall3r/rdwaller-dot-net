@@ -1,13 +1,12 @@
 <!doctype html>
-<html lang="{{ lang }}" data-theme="">
+<html lang="{{ lang }}">
   <head>
-    <title>{{ title }}</title>
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
+    <title>{{ title }}</title>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rdwaller.net{{ page.url }}" />
     <meta property="og:title" content="{{ title }}" />
@@ -16,11 +15,21 @@
     {% if socialImage %}
       <meta property="og:image" content="https://rdwaller.net{{ socialImage }}" />
     {% endif %}
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+      } catch (e) {}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/nav.js" defer></script>
+    <script src="/js/theme.js" defer></script>
   </head>
   <body>
     <div id="skip">
