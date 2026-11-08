@@ -186,7 +186,7 @@ body {
   line-height: 1.6;
   margin: 0 auto;
   max-width: 67rem;
-  min-height: 100vh;
+  min-height: 100svh;
   padding: 0 1.5rem;
 }
 
