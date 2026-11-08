@@ -42,18 +42,18 @@
   --font-heading: Georgia, serif;
 
   /* Font sizes */
-  --scale: 1.22; /* ratio between steps */
-  --font-size-md: 1.125rem;
-  --font-size-sm: calc(var(--font-size-md) / var(--scale)); /* ≈ 0.94rem */
-  --font-size-lg: calc(var(--font-size-md) * var(--scale)); /* ≈ 1.35rem */
-  --font-size-xl: calc(var(--font-size-lg) * var(--scale)); /* ≈ 1.62rem */
-  --font-size-2xl: calc(var(--font-size-xl) * var(--scale)); /* ≈ 1.94rem */
-  --font-size-3xl: calc(var(--font-size-2xl) * var(--scale)); /* ≈ 2.33rem */
+  --scale: 1.25; /* ratio between steps */
+  --font-size-md: 1rem; /* body text */
+  --font-size-sm: calc(var(--font-size-md) / var(--scale)); /* ≈ 0.92rem */
+  --font-size-lg: calc(var(--font-size-md) * var(--scale)); /* ≈ 1.37rem */
+  --font-size-xl: calc(var(--font-size-lg) * var(--scale)); /* ≈ 1.67rem */
+  --font-size-2xl: calc(var(--font-size-xl) * var(--scale)); /* ≈ 2.04rem */
+  --font-size-3xl: calc(var(--font-size-2xl) * var(--scale)); /* ≈ 2.49rem */
 
   /* Font weights */
   --weight-bold: 700;
+  --weight-light: 300;
   --weight-medium: 500;
-  --weight-regular: 400;
   --weight-semibold: 600;
 
   /* Page Styling */
@@ -64,6 +64,12 @@
   --link-visited-color: var(--color-plum);
   --link-hover-color: var(--color-spruce);
   --link-active-color: var(--color-clay);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --font-size-md: 1.13rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -175,7 +181,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-body);
-  font-weight: var(--weight-regular);
+  font-size: var(--font-size-md);
+  font-weight: var(--weight-light);
   line-height: 1.6;
   margin: 0 auto;
   max-width: 67rem;
@@ -587,7 +594,7 @@ tfoot {
 
 #site-id {
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: var(--font-size-2xl);
   font-weight: var(--weight-semibold);
 }
 
