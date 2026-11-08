@@ -442,7 +442,7 @@ tfoot {
 }
 
 .table-not-applicable {
-  background-color: var(--color-gainsboro);
+  background-color: color-mix(in srgb, var(--text-color) 12%, var(--bg-color));
   color: color-mix(in srgb, var(--text-color) 67%, transparent);
 }
 
