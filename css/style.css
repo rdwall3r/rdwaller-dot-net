@@ -8,12 +8,13 @@
   /* Blue-greens */
   --color-sage: #c5d5c5;
   --color-seafoam: #6cc4b0;
-  --color-spruce: #385d51;
+  --color-spruce: #3f685b;
 
   /* Blues */
   --color-cobalt: #1d5fd6;
   --color-cornflower: #8fb0ff;
   --color-ink-blue: #1b3a8c;
+  --color-sapphire: #2d57cb;
 
   /* Reds */
   --color-maroon: #800000;
@@ -59,7 +60,7 @@
   --container-color: var(--color-walnut);
   --bg-color: var(--color-vellum);
   --text-color: var(--color-ink-black);
-  --link-color: var(--color-ink-blue);
+  --link-color: var(--color-sapphire);
   --link-visited-color: var(--color-plum);
   --link-hover-color: var(--color-spruce);
   --link-active-color: var(--color-clay);
@@ -472,6 +473,10 @@ tfoot {
   outline-offset: 2px;
 }
 
+.theme-icon-moon {
+  filter: invert(0.06);
+}
+
 .theme-icon-sun {
   display: none;
 }
@@ -494,7 +499,6 @@ tfoot {
 
 :root[data-theme='dark'] .theme-icon-moon {
   display: none;
-  filter: invert(0.06);
 }
 
 /* Hidden on screen but still read by screen readers */
