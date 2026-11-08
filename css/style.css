@@ -641,3 +641,15 @@ tfoot {
 #theme-toggle:is(:hover, :focus-visible) img {
   transform: scale(1.1);
 }
+
+/* High-contrast mode: give icons a fixed backing so they can't disappear into the system background */
+@media (forced-colors: active) {
+  .reading-list-link img,
+  .social-links img,
+  #theme-toggle img {
+    background-color: var(--color-vellum);
+    border-radius: 0.25rem;
+    filter: none !important; /* drop the theme tints; black on vellum is always visible */
+    forced-color-adjust: none;
+  }
+}
