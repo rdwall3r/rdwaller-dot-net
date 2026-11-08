@@ -621,9 +621,8 @@ tfoot {
 
 #theme-toggle {
   display: flex;
-  left: calc(100% - 0.25rem);
-  padding: 0.25rem;
   position: absolute;
+  right: 0;
   top: 50%;
   translate: 0 -50%;
 }
