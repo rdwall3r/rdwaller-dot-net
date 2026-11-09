@@ -182,7 +182,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--font-size-md);
   font-weight: var(--weight-regular);
-  line-height: 1.6;
+  line-height: 1.55;
   margin: 0 auto;
   max-width: 67rem;
   min-height: 100svh;
