@@ -1,6 +1,5 @@
 :root {
   /* Dark neutrals */
-  --color-black: black;
   --color-charcoal: #1e1e1e;
   --color-ink-black: #0f1115;
   --color-midnight: #121a2e;
@@ -20,7 +19,6 @@
   --color-maroon: #800000;
 
   /* Near-whites */
-  --color-gainsboro: #dcdcdc;
   --color-newsprint: #c8c4b8;
   --color-vellum: #f6eee3;
 
@@ -43,17 +41,18 @@
 
   /* Font sizes */
   --scale: 1.25; /* ratio between steps */
-  --font-size-md: 1rem; /* body text */
-  --font-size-sm: calc(var(--font-size-md) / var(--scale)); /* ≈ 0.92rem */
-  --font-size-lg: calc(var(--font-size-md) * var(--scale)); /* ≈ 1.37rem */
-  --font-size-xl: calc(var(--font-size-lg) * var(--scale)); /* ≈ 1.67rem */
-  --font-size-2xl: calc(var(--font-size-xl) * var(--scale)); /* ≈ 2.04rem */
-  --font-size-3xl: calc(var(--font-size-2xl) * var(--scale)); /* ≈ 2.49rem */
+  --font-size-md: 1rem; /* body text; 1.13rem at 800px+, which scales every size below by ~13% */
+  --font-size-sm: calc(var(--font-size-md) / var(--scale)); /* 0.8rem */
+  --font-size-lg: calc(var(--font-size-md) * var(--scale)); /* 1.25rem */
+  --font-size-xl: calc(var(--font-size-lg) * var(--scale)); /* ≈ 1.56rem */
+  --font-size-2xl: calc(var(--font-size-xl) * var(--scale)); /* ≈ 1.95rem */
+  --font-size-3xl: calc(var(--font-size-2xl) * var(--scale)); /* ≈ 2.44rem */
 
   /* Font weights */
   --weight-bold: 700;
   --weight-light: 300;
   --weight-medium: 500;
+  --weight-regular: 400;
   --weight-semibold: 600;
 
   /* Page Styling */
@@ -182,7 +181,7 @@ body {
   flex-direction: column;
   font-family: var(--font-body);
   font-size: var(--font-size-md);
-  font-weight: var(--weight-light);
+  font-weight: var(--weight-regular);
   line-height: 1.6;
   margin: 0 auto;
   max-width: 67rem;
