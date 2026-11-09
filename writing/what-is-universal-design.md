@@ -9,7 +9,7 @@ showDate: true
 <figure>
   <blockquote>
     <p>The design of products and environments to be usable by all people, to the greatest extent
-    possible, without the need for specialized design.</p>
+    possible, without the need for adaptation or specialized design.</p>
   </blockquote>
   <figcaption>— <cite>The Center for Universal Design</cite></figcaption>
 </figure>
