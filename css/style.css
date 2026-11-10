@@ -347,6 +347,7 @@ tfoot {
   display: flex;
   flex: 1;
   flex-direction: column;
+  max-width: 55rem;
 }
 
 @media (min-width: 800px) {
@@ -354,6 +355,7 @@ tfoot {
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
+    padding-bottom: 5rem;
   }
 }
 
@@ -389,7 +391,7 @@ tfoot {
 }
 
 .prose {
-  max-width: 64ch;
+  max-width: 60ch;
   min-width: 25ch;
 }
 
