@@ -343,19 +343,23 @@ tfoot {
 }
 
 .home-container {
+  flex: 1;
+}
+
+.home-content {
   align-items: center;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  max-width: 55rem;
 }
 
 @media (min-width: 800px) {
   .home-container {
+    padding-top: 3rem;
+  }
+
+  .home-content {
     flex-direction: row;
     gap: 2rem;
-    justify-content: center;
-    padding-bottom: 5rem;
   }
 }
 
@@ -634,10 +638,9 @@ tfoot {
 
 #theme-toggle {
   display: flex;
+  padding: 0.25rem;
   position: absolute;
   right: 0;
-  top: 50%;
-  translate: 0 -50%;
 }
 
 #theme-toggle:is(:hover, :focus-visible) img {
