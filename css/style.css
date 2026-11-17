@@ -637,13 +637,15 @@ tfoot {
 }
 
 #theme-toggle {
+  border: 0.1rem solid var(--text-color);
+  border-radius: 50%;
   display: flex;
-  padding: 0.25rem;
+  padding: 0.3rem;
   position: absolute;
-  right: 0;
+  right: -1rem;
 }
 
-#theme-toggle:is(:hover, :focus-visible) img {
+#theme-toggle:is(:hover, :focus-visible) {
   transform: scale(1.1);
 }
 
