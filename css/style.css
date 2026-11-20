@@ -399,6 +399,21 @@ tfoot {
   min-width: 25ch;
 }
 
+.reading-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.reading-list dt {
+  font-weight: var(--weight-bold);
+  margin: 0 0 0.25rem;
+}
+
+.reading-list dd {
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
 .reading-list-link {
   display: flex;
   font-weight: var(--weight-medium);
