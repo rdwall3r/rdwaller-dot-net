@@ -326,6 +326,10 @@ tfoot {
   margin-top: 0;
 }
 
+.breadcrumbs {
+  margin-bottom: 2rem;
+}
+
 .bulleted-list {
   list-style-type: disc;
   margin: 0 2rem;
