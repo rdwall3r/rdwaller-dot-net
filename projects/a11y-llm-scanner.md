@@ -9,13 +9,5 @@ description: AI tooling to augment Axe-core accessibility scans.
 AI tooling to augment [Axe-core](https://www.deque.com/axe/axe-core/) accessibility scans. The
 current focus is screen reading compatibility. Capabilities will evolve.
 
-<p class="github-link">
-  <img
-    class="icon-small"
-    src="/assets/icons/GitHub_Invertocat_Black.svg"
-    alt="GitHub repository for Hearing Solutions"
-  />
-  <a href="https://github.com/rdwall3r/a11y-llm-scanner">
-    View it on GitHub
-  </a>
-</p>
+![GitHub repository for A11y LLM Scanner](/assets/icons/GitHub_Invertocat_Black.svg){.icon-small}
+[View it on GitHub](https://github.com/rdwall3r/a11y-llm-scanner) {.github-link}

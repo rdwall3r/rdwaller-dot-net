@@ -26,6 +26,8 @@
     "@11ty/eleventy": "^3.1.6"
   },
   "devDependencies": {
+    "markdown-it-attrs": "^5.0.1",
+    "markdown-it-deflist": "^4.0.0",
     "prettier": "^3.9.6"
   }
 }

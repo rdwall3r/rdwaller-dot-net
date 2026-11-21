@@ -1,4 +1,9 @@
+import markdownItAttrs from 'markdown-it-attrs';
+import markdownItDeflist from 'markdown-it-deflist';
+
 export default function (eleventyConfig) {
+  eleventyConfig.amendLibrary('md', (mdLib) => mdLib.use(markdownItDeflist).use(markdownItAttrs));
+
   eleventyConfig.addFilter('readableDate', (dateObj, lang = 'en') => {
     return new Intl.DateTimeFormat(lang, {
       year: 'numeric',

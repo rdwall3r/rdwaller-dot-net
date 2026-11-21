@@ -20,11 +20,13 @@ the eyes, and easier on the brain. I found my answer in
 letterform distinction" and is designed to help low-vision readers better decode text. Techniques
 that enhance letterform distinction include:
 
-<ul class="bulleted-list">
-  <li>Unambiguous Letterforms (think "8" vs "B" or "O" vs "0")</li>
-  <li>Spacious counters (the enclosed areas inside letters)</li>
-  <li>Angled spurs (small projections from the main strokes) and longer tails</li>
-</ul>
+<!-- prettier-ignore-start -->
+- Unambiguous Letterforms (think "8" vs "B" or "O" vs "0")
+- Spacious counters (the enclosed areas inside letters)
+- Angled spurs (small projections from the main strokes) and longer tails
+{.bulleted-list}
+
+<!-- prettier-ignore-end -->
 
 An
 [article in Dezeen Magazine](https://www.dezeen.com/2020/09/11/atkinson-hyperlegible-typeface-applied-design-works/)

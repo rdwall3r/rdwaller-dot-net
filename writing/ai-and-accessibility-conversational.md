@@ -35,14 +35,19 @@ to address this pervasive problem with generative AI.
 sites. The regenerated DOMs had semantic content enhancements, while attempting to leave the page
 fully functional. Some advantages of the regenerated DOM the authors cite include:
 
-<dl class="bulleted-desc-list">
-  <dt>Logical Reordering of Sections</dt>
-  <dd>Reorganizes page sections into a more logical, linear sequence.</dd>
-  <dt>Addition of Summary Headings</dt>
-  <dd>Adds summaries to content sections and aligns them as headings.</dd>
-  <dt>Enhanced Navigation Flexibility</dt>
-  <dd>The regenerated version puts multiple roles on the same title element so users may navigate to the same element as a heading, link, or list item.</dd>
-</dl>
+<!-- prettier-ignore-start -->
+Logical Reordering of Sections
+: Reorganizes page sections into a more logical, linear sequence.
+
+Addition of Summary Headings
+: Adds summaries to content sections and aligns them as headings.
+
+Enhanced Navigation Flexibility
+: The regenerated version puts multiple roles on the same title element so users may navigate to
+  the same element as a heading, link, or list item.
+{.bulleted-desc-list}
+
+<!-- prettier-ignore-end -->
 
 ## Problems
 

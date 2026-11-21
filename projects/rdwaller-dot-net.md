@@ -22,13 +22,5 @@ personal space of mine largely free of AI-generated code. The same goes for cont
 handle repetitive and tedious tasks, and for research, suggestions, and rubber-ducking. To ignore
 these capacities would be to ignore a wealth of opportunities for learning and idea-generation.
 
-<p class="github-link">
-  <img
-    class="icon-small"
-    src="/assets/icons/GitHub_Invertocat_Black.svg"
-    alt="GitHub repository for Hearing Solutions"
-  />
-  <a href="https://github.com/rdwall3r/rdwaller-dot-net">
-    View it on GitHub
-  </a>
-</p>
+![GitHub repository for rdwaller.net](/assets/icons/GitHub_Invertocat_Black.svg){.icon-small}
+[View it on GitHub](https://github.com/rdwall3r/rdwaller-dot-net) {.github-link}
