@@ -342,6 +342,10 @@ tfoot {
   list-style-type: disc;
 }
 
+.github-link img {
+  margin-right: 0.25rem;
+}
+
 .home-container {
   flex: 1;
 }
