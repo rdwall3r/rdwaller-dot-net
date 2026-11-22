@@ -1,14 +1,14 @@
----
+<!-- ---
 date: 2026-11-21
 returnDestination: Projects
 title: Hearing Solutions
 showDate: false
 description: A hypothetical hearing solutions shop as a study in accessible e-commerce design.
----
+--- -->
 
 A hypothetical hearing solutions shop as a study in accessible e-commerce design.
 
-## Stack
+## Built with
 
 <!-- prettier-ignore-start -->
 - React Router
