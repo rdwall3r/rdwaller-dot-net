@@ -48,9 +48,13 @@ collection.
 
 ## Sources
 
+<!-- prettier-ignore-start -->
 - Dezeen,
   [Atkinson Hyperlegible typeface is designed for visually impaired readers](https://www.dezeen.com/2020/09/11/atkinson-hyperlegible-typeface-applied-design-works/),
   September 11, 2020.
 - Braille Institute,
   [Read Easier With Our Family of Hyperlegible Fonts](https://www.brailleinstitute.org/freefont/).
   Accessed October 27, 2026.
+{.bulleted-list}
+
+<!-- prettier-ignore-end -->

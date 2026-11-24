@@ -122,6 +122,10 @@ include "Barrier-free Design", "Design for All", "Inclusive Design", and "Human-
 
 ## Sources
 
+<!-- prettier-ignore-start -->
 - [The Center for Universal Design](https://design.ncsu.edu/research/center-for-universal-design/)
 - [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)
 - [The United Nations' Convention on the Rights of Persons with Disabilities](https://social.desa.un.org/issues/disability/crpd/convention-on-the-rights-of-persons-with-disabilities-articles)
+{.bulleted-list}
+
+<!-- prettier-ignore-end -->
