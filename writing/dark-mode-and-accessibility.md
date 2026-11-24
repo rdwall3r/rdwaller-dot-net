@@ -46,8 +46,8 @@ in mobile phones" (Gazit et al.).
 
 In some cases, however, dark mode might be beneficial. There have been reports that some readers
 with low vision prefer dark mode. A 1985 study led by Gordon Legge observed seven participants with
-cloudy ocular media and found that all of them displayed better reading rates with negative
-polarity. (Legge et al.)
+cloudy ocular media and found that all of them displayed better reading rates with negative polarity
+(Legge et al.).
 
 On the whole, aesthetic appeal alone probably justifies the implementation of dark mode, so long as
 the text-to-background contrast ratios remain accessible. Light mode might offer modest functional
