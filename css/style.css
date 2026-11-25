@@ -409,7 +409,11 @@ tfoot {
 
 .prose {
   max-width: 60ch;
-  min-width: 25ch;
+  min-width: min(25ch, 100%);
+}
+
+.prose a {
+  overflow-wrap: anywhere;
 }
 
 .reading-list {
